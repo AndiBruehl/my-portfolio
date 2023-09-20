@@ -33,3 +33,9 @@
 .NavBar a:active {
     color: #8C1CD1;
 }
+
+.NavBar .Time {
+    text-decoration: none;
+    color: white;
+    margin-left: 30%;
+}

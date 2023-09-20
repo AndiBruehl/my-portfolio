@@ -1,4 +1,4 @@
-// import './App.css';
+
 
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
@@ -13,11 +13,11 @@ const App = () => {
   return (
     <div className="App">
       <NavBar />
-      <About />
-      <Contact />
       <Home />
+      <About />
       <Skills />
       <YouTube />
+      <Contact />
     </div>
   );
 }
