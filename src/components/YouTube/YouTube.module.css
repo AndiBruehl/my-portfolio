@@ -1,5 +1,9 @@
+/* Stile für .YouTube */
 .YouTube {
     background-color: black;
+    height: 100%;
+    position: relative; /* Füge relative Positionierung hinzu */
+    overflow: hidden; /* Verhindert Überlauf */
 }
 
 .YouTube .Paragraph {
@@ -13,21 +17,25 @@
     position: relative;
 }
 
+/* Stile für .Background */
 .YouTube .Background {
     position: absolute;
-    width: 62.25%;
-    right: 0;
-    z-index: -1s;
+    top: 0;
+    left: 0;
+    width: 100%; /* Breite auf 100% setzen */
+    height: 100%; /* Höhe auf 100% setzen */
+    z-index: 0;
 }
 
+/* Stile für .Videos */
 .YouTube .Videos {
-width: 70%;
+    width: 70%;
 }
 
 .YouTube .Videos .VideoContainer {
     display: flex;
     margin-bottom: 5%;
-    height: 300px;
+    height: 100%;
     align-items: center;
     background: #141313;
     border-radius: 10px;
@@ -37,21 +45,28 @@ width: 70%;
 .YouTube .VideoContainer .Text {
     padding-left: 2.5%;
     padding-right: 2.5%;
+    width: 45%;
 }
 
 .YouTube .VideoContainer .Thumbnail {
     padding-left: 2.5%;
     padding-right: 2.5%;
+    width: 45%;
     position: relative;
+    padding: 2.5%;
+}
+
+.YouTube .VideoContainer .Thumbnail img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    padding: 5%;
 }
 
 .YouTube .VideoContainer .Thumbnail .PlayButton {
     position: absolute;
-    left: 45%;
-    top: 30%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     cursor: pointer;
-}
-
-.YouTube .VideoContainer .Thumbnail img {
-    max-width: 489px;
 }

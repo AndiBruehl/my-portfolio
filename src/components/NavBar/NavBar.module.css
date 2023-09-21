@@ -2,30 +2,33 @@
 
 .NavBar {
     background: #181818;
-    height: 80px;
     width: 100%;
     position: fixed;
     z-index: 999;
     opacity: 0.9;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap; /* Erlaubt das Umbruch der Elemente in die nächste Zeile */
+    justify-content: space-between;
     align-items: center;
-    transition: background 0.3s ease; /* Füge eine sanfte Hintergrundübergang an */
+    transition: background 0.3s ease;
 }
 
 .NavBar.navScrolled {
-    background: rgba(24, 24, 24, 0.9); /* Hintergrundfarbe ändern, wenn gescrollt wird */
+    background: rgba(24, 24, 24, 0.9);
 }
 
 .NavBar nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Umbruch der Links in die nächste Zeile */
+    justify-content: center;
+    align-items: center;
 }
 
 .NavBar nav ul li {
-    display: inline-block;
-    margin: 20px;
+    margin: 0 20px;
 }
 
 .NavBar nav ul li a {
@@ -44,10 +47,29 @@
 .NavBar .Time {
     text-decoration: none;
     color: white;
-    margin-left: 30%;
+    margin-left: 30px;
 }
 
-/* Füge einen Abstand oben (margin-top) ein, um Platz für die Navbar zu schaffen */
 #about, #skills, #youtube, #contact {
-    margin-top: 80px; /* Die Höhe der Navbar in Pixeln */
+    margin-top: 80px;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .NavBar {
+        flex-direction: column; /* Elemente in eine Spalte auf kleinen Bildschirmen anordnen */
+    }
+
+    .NavBar nav ul li {
+        margin: 10px 10px; /* Reduzieren Sie den Abstand zwischen den Links auf kleinen Bildschirmen */
+    }
+
+    .NavBar .Time {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #about, #skills, #youtube, #contact {
+        margin-top: 10px; /* Reduzieren Sie den Abstand auf kleinen Bildschirmen */
+    }
 }

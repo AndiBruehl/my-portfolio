@@ -8,7 +8,7 @@ import background from './../../img/background3.png'
 const playBtnSvg = (url) => {
     return (
         <div className={classes.PlayButton} onClick={(e) => window.open(url, "_blank").focus}>
-            <svg fill="white" height="80px" width="80px" version="1.1" id="Capa_1" viewBox="0 0 58.752 58.752" xmlSpace="preserve">
+            <svg fill="white" height="50px" width="50px" version="1.1" id="Capa_1" viewBox="0 0 58.752 58.752" xmlSpace="preserve">
                 <g>
                     <path d="M52.524,23.925L12.507,0.824c-1.907-1.1-4.376-1.097-6.276,0C4.293,1.94,3.088,4.025,3.088,6.264v46.205
                         c0,2.24,1.204,4.325,3.131,5.435c0.953,0.555,2.042,0.848,3.149,0.848c1.104,0,2.192-0.292,3.141-0.843l40.017-23.103
