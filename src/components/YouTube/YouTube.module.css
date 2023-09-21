@@ -2,8 +2,10 @@
 .YouTube {
     background-color: black;
     height: 100%;
-    position: relative; /* Füge relative Positionierung hinzu */
-    overflow: hidden; /* Verhindert Überlauf */
+    position: relative;
+    /* Füge relative Positionierung hinzu */
+    overflow: hidden;
+    /* Verhindert Überlauf */
 }
 
 .YouTube .Paragraph {
@@ -22,8 +24,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Breite auf 100% setzen */
-    height: 100%; /* Höhe auf 100% setzen */
+    width: 100%;
+    /* Breite auf 100% setzen */
+    height: 100%;
+    /* Höhe auf 100% setzen */
     z-index: 0;
 }
 
@@ -60,13 +64,37 @@
     max-width: 100%;
     width: auto;
     height: auto;
-    padding: 5%;
 }
 
 .YouTube .VideoContainer .Thumbnail .PlayButton {
     position: absolute;
-    left: 50%;
+    left: 55%;
     top: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+}
+
+@media (max-width: 746px) {
+    .YouTube .Videos .VideoContainer {
+        flex-direction: column;
+    }
+    
+    .YouTube .Videos .Text {
+        width: 80%;
+    }
+
+    .YouTube .Videos .Thumbnail {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .YouTube .Videos .Text {
+        width: 90%;
+    }
+
+    .YouTube .Videos .Thumbnail {
+        width: 90%;
+    }
 }

@@ -7,6 +7,11 @@ const About = () => {
         <div className={classes.AboutMe} id="about">
             <PageHeader title={'About Me'} />
             <div className={classes.Container}>
+            <div className={classes.Photo}>
+                    <img className={classes.Me} src={me} alt="Profilepic">
+
+                    </img>
+                </div>
                 <div className={classes.Text}>
                     <h2>Hallo, ich bin Andreas Brühl ...</h2>
                     <p  >
@@ -30,11 +35,7 @@ const About = () => {
                             Ich freue mich darauf, mein Wissen und meine Erfahrung in einem dynamischen Team einzubringen und gemeinsam großartige Produkte zu entwickeln. Lassen Sie uns gemeinsam die Zukunft gestalten!
                         </p>
                 </div>
-                <div className={classes.Photo}>
-                    <img className={classes.Me} src={me} alt="Profilepic">
 
-                    </img>
-                </div>
             </div>
         </div>
 

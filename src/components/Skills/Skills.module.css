@@ -43,5 +43,30 @@
 .Skills .List ul li {
     display: flex;
     justify-content: center;
-    font-size: 18px;
+    /* padding: 5%; */
+    text-align: center;
+}
+
+@media (max-width: 910px) {
+    .Skills .Container img {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media (max-width: 746px) {
+    .Skills .Container .List {
+        flex-basis: 49%;
+    }
+
+    .Skills p{
+        width: 80%;
+        /* padding-left: 10%; */
+    }
+
+    .Skills .Container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 }

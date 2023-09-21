@@ -3,6 +3,7 @@
 .NavBar {
     background: #181818;
     width: 100%;
+    height:   calc(2rem + 1vw);
     position: fixed;
     z-index: 999;
     opacity: 0.9;
@@ -44,10 +45,19 @@
     color: #8C1CD1;
 }
 
+/* Hinzufügen einer Klasse für den unterstrichenen aktiven Link */
+.NavBar a.active {
+    border-bottom: 5px solid #8C1CD1;
+    font-size: larger;
+}
+
 .NavBar .Time {
     text-decoration: none;
     color: white;
-    margin-left: 30px;
+    margin-right: 1vw;
+    font-size: calc(0.4rem + 1vw);
+    justify-content: center;
+    align-items: center;
 }
 
 #about, #skills, #youtube, #contact {

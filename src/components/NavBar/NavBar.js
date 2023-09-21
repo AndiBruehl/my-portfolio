@@ -3,6 +3,7 @@ import classes from './NavBar.module.css';
 
 const NavBar = () => {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
+  const [activeLink, setActiveLink] = useState('Home'); // Initialize with 'Home'
 
   // Update the currentDateTime every second
   useEffect(() => {
@@ -15,7 +16,7 @@ const NavBar = () => {
   }, []);
 
   // const daysOfWeek = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
-const daysOfWeek = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+  const daysOfWeek = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
   const currentDayOfWeek = daysOfWeek[currentDateTime.getDay()];
 
   const formattedDateTime = currentDateTime.toLocaleString('de-DE', {
@@ -27,24 +28,59 @@ const daysOfWeek = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
     second: '2-digit',
   });
 
+  // Function to handle link click and set the active link
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
+
   return (
     <div className={classes.NavBar}>
       <nav>
         <ul>
           <li>
-            <a href="/#">Home</a>
+            <a
+              href="/#"
+              onClick={() => handleLinkClick('Home')}
+              className={activeLink === 'Home' ? classes.active : ''}
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a href="/#about">About Me</a>
+            <a
+              href="/#about"
+              onClick={() => handleLinkClick('About Me')}
+              className={activeLink === 'About Me' ? classes.active : ''}
+            >
+              About Me
+            </a>
           </li>
           <li>
-            <a href="/#skills">Skills</a>
+            <a
+              href="/#skills"
+              onClick={() => handleLinkClick('Skills')}
+              className={activeLink === 'Skills' ? classes.active : ''}
+            >
+              Skills
+            </a>
           </li>
           <li>
-            <a href="/#youtube">YouTube</a>
+            <a
+              href="/#youtube"
+              onClick={() => handleLinkClick('YouTube')}
+              className={activeLink === 'YouTube' ? classes.active : ''}
+            >
+              YouTube
+            </a>
           </li>
           <li>
-            <a href="/#contact">Contact</a>
+            <a
+              href="/#contact"
+              onClick={() => handleLinkClick('Contact')}
+              className={activeLink === 'Contact' ? classes.active : ''}
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </nav>

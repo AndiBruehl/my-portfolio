@@ -37,9 +37,9 @@ const youtubeVideo = (url, thumbnail, description) => {
     )
 }
 
-const cleanCodeVideoDescription = 'Video1'
-const javaScriptNodeJSDescription = 'Video2'
-const background2Description = 'Video3'
+const cleanCodeVideoDescription = 'Video1 - Platzhalter'
+const javaScriptNodeJSDescription = 'Video2 - Platzhalter'
+const background2Description = 'Video3 - Platzhalter'
 
 const YouTube = () => {
     return (

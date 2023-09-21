@@ -9,7 +9,7 @@
 .Container hr {
     position: absolute;
     left: 0;
-    width: 124px;
+    width: 12vw;
     border: 5px solid #8c1cd1;
     border-radius: 20px;
 }
