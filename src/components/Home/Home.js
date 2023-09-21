@@ -4,7 +4,7 @@ import binaryWorld from './../../img/binaryWorld.png'
 
 const Home = () => {
     return (
-        <div className={classes.Home}>
+        <div className={classes.Home} id="/">
             <div className={classes.Container}>
                 <h1 className={classes.Hello}>Hallo Welt!</h1>
                 <h1>Willkommen auf meiner Website!</h1>

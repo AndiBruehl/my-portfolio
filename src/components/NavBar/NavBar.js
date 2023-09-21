@@ -32,7 +32,7 @@ const daysOfWeek = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
       <nav>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <a href="/#">Home</a>
           </li>
           <li>
             <a href="/#about">About Me</a>

@@ -1,0 +1,22 @@
+.Contact {
+    background-color: #141313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.Contact .ContactIcons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Add spacing between icons */
+}
+
+.Contact .ContactIcons svg path {
+    cursor: pointer;
+}
+
+.Contact .Copyright {
+    color: white;
+    margin-top: 20px; /* Add spacing between icons and copyright */
+}

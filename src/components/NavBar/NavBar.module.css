@@ -1,3 +1,5 @@
+/* NavBar.module.css */
+
 .NavBar {
     background: #181818;
     height: 80px;
@@ -8,6 +10,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background 0.3s ease; /* Füge eine sanfte Hintergrundübergang an */
+}
+
+.NavBar.navScrolled {
+    background: rgba(24, 24, 24, 0.9); /* Hintergrundfarbe ändern, wenn gescrollt wird */
 }
 
 .NavBar nav ul {
@@ -38,4 +45,9 @@
     text-decoration: none;
     color: white;
     margin-left: 30%;
+}
+
+/* Füge einen Abstand oben (margin-top) ein, um Platz für die Navbar zu schaffen */
+#about, #skills, #youtube, #contact {
+    margin-top: 80px; /* Die Höhe der Navbar in Pixeln */
 }
