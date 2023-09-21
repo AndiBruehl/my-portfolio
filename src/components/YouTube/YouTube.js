@@ -1,7 +1,7 @@
 import PageHeader from '../PageHeader/PageHeader';
 import classes from './YouTube.module.css'
-import cleanCode from './../../img/cleanCode.png'
-import node from './../../img/javaScriptNodeJS.png'
+// import cleanCode from './../../img/cleanCode.png'
+// import node from './../../img/javaScriptNodeJS.png'
 import bg2 from './../../img/background2.png'
 import background from './../../img/background3.png'
 
@@ -53,9 +53,9 @@ const YouTube = () => {
                     </p>
                 </div>
                 <div className={classes.Videos}>
-                    {youtubeVideo("https://www.youtube.com/watch?v=hvL1339luv0", cleanCode, cleanCodeVideoDescription)}
+                    {youtubeVideo("https://www.youtube.com/watch?v=hvL1339luv0", bg2, cleanCodeVideoDescription)}
 
-                    {youtubeVideo("https://www.youtube.com/watch?v=hvL1339luv0", node, javaScriptNodeJSDescription)}
+                    {youtubeVideo("https://www.youtube.com/watch?v=hvL1339luv0", bg2, javaScriptNodeJSDescription)}
 
                     {youtubeVideo("https://www.youtube.com/watch?v=hvL1339luv0", bg2, background2Description)}
 

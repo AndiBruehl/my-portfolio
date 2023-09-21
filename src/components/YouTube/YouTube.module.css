@@ -24,10 +24,6 @@
 width: 70%;
 }
 
-.YouTube .VideoContainer .Thumbnail img {
-    max-width: 489px;
-}
-
 .YouTube .Videos .VideoContainer {
     display: flex;
     margin-bottom: 5%;
@@ -38,12 +34,12 @@ width: 70%;
     box-shadow: 1px 1px 0 0 white;
 }
 
-.YouTube .Videos .Text {
+.YouTube .VideoContainer .Text {
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
 
-.YouTube .Videos .Thumbnail {
+.YouTube .VideoContainer .Thumbnail {
     padding-left: 2.5%;
     padding-right: 2.5%;
     position: relative;
@@ -54,4 +50,8 @@ width: 70%;
     left: 45%;
     top: 30%;
     cursor: pointer;
+}
+
+.YouTube .VideoContainer .Thumbnail img {
+    max-width: 489px;
 }
