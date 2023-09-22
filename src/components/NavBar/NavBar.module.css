@@ -3,12 +3,12 @@
 .NavBar {
     background: #181818;
     width: 100%;
-    height:   calc(2rem + 1vw);
+    height: calc(2.2rem + 1vw);
     position: fixed;
     z-index: 999;
     opacity: 0.9;
     display: flex;
-    flex-wrap: wrap; /* Erlaubt das Umbruch der Elemente in die nächste Zeile */
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     transition: background 0.3s ease;
@@ -23,7 +23,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Umbruch der Links in die nächste Zeile */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -37,6 +37,12 @@
     color: white;
 }
 
+.NavBar nav ul li a.selected {
+    border-bottom: 2px solid #8C1CD1; /* Hier die gewünschte Unterstreichungsfarbe */
+    transform: scale(1.1);
+}
+
+
 .NavBar a:hover {
     border-bottom: 5px solid #8C1CD1;
 }
@@ -45,7 +51,6 @@
     color: #8C1CD1;
 }
 
-/* Hinzufügen einer Klasse für den unterstrichenen aktiven Link */
 .NavBar a.active {
     border-bottom: 5px solid #8C1CD1;
     font-size: larger;
@@ -54,32 +59,85 @@
 .NavBar .Time {
     text-decoration: none;
     color: white;
-    margin-right: 1vw;
-    font-size: calc(0.4rem + 1vw);
+    position: absolute;
+    right: 0;
+    font-size: calc(1rem + 1vw);
     justify-content: center;
     align-items: center;
+    margin-right: 1vw;
+    /* Optional, je nachdem, wie viel Abstand du von rechts möchtest */
 }
 
-#about, #skills, #youtube, #contact {
+#about,
+#skills,
+#youtube,
+#contact {
     margin-top: 80px;
 }
 
-/* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
     .NavBar {
-        flex-direction: column; /* Elemente in eine Spalte auf kleinen Bildschirmen anordnen */
+        flex-direction: column;
     }
 
     .NavBar nav ul li {
-        margin: 10px 10px; /* Reduzieren Sie den Abstand zwischen den Links auf kleinen Bildschirmen */
+        margin: 10px 10px;
+    }
+
+    /* .NavBar .Time {
+        margin-right: 7%;
+        margin-top: 1%;
+    } */
+
+    #about,
+    #skills,
+    #youtube,
+    #contact {
+        margin-top: 10px;
+    }
+}
+
+.NavBar .MobileNavigation {
+    display: none;
+}
+
+@media (max-width: 990px) {
+    .NavBar .Navigation {
+        display: none;
     }
 
     .NavBar .Time {
-        margin-left: 0;
-        margin-top: 10px;
+        margin-right: 7%;
+        margin-top: 1%;
     }
 
-    #about, #skills, #youtube, #contact {
-        margin-top: 10px; /* Reduzieren Sie den Abstand auf kleinen Bildschirmen */
+    .NavBar .MobileNavigation {
+        display: flex;
+        align-items: right;
+        padding: 0.5%;
+    }
+
+    .NavBar .MobileNavigation .Hamburger {
+        position: absolute;
+        margin-top: -1.5%;
+        margin-left: 5vw;
+        right: 1%;
+        cursor: pointer;
+    }
+
+    .NavBar nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(2.2rem + 1vw);
+        right: 0;
+        width: 20vw;
+        background-color: #181818;
+        border-top: 2px solid #8c1cd1;
+        border-radius: 10px;
+    }
+
+    .NavBar a:hover {
+        color: #8c1cd1
     }
 }
