@@ -1,6 +1,6 @@
 import classes from './Skills.module.css'
 import PageHeader from '../PageHeader/PageHeader';
-import codeThinking from '../../img/codeThinking.svg'
+import codeThinking from '../../assets/codeThinking.svg'
 
 const listTitleStyle = { fontWeight: 900, color: '#9B1FE8', marginBotton: '4px'}
 

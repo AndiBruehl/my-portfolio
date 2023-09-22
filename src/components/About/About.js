@@ -1,6 +1,6 @@
 import classes from './About.module.css'
 import PageHeader from '../PageHeader/PageHeader';
-import me from "./../../img/me.png"
+import me from "./../../assets/me.png"
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';

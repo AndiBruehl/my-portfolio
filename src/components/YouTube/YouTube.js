@@ -1,7 +1,10 @@
 import PageHeader from '../PageHeader/PageHeader';
 import classes from './YouTube.module.css';
-import bg2 from './../../img/background2.png';
-import background from './../../img/background3.png';
+import QuizTopia from "./../../assets/QuizTopia.png"
+import WeatherNow from "./../../assets/WeaatherNow.png"
+import JavaScriptGames from './../../assets/JavaScripzGames.png'
+import bg2 from './../../assets/background2.png';
+import background from './../../assets/background3.png';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
@@ -37,7 +40,10 @@ const youtubeVideo = (url, thumbnail, description) => {
     );
 }
 
-const cleanCodeVideoDescription = 'Video1 - Platzhalter';
+const quiztopiaVideoDescription = 'QuizTopia - Eine Online-Quiz-App';
+const weatherNowVideoDescription = 'WeatherNow - Das aktuelle Wetter für JEDEN Ort der Welt prüfen!';
+const gamesVideoDescription = 'TicTacToe und ein FlappyBird-Klon zum Zeitvertreib für zwischendurch!';
+const cleanCodeVideoDescription = 'NICHT KLICKEN! SENSIBLER INHALT!';
 // const javaScriptNodeJSDescription = 'Video2 - Platzhalter';
 // const background2Description = 'Video3 - Platzhalter';
 
@@ -76,13 +82,19 @@ const YouTube = () => {
             <div ref={ref} className={classes.YouTubeContent}>
                 <div className={classes.Paragraph}>
                     <p>
-                        bla bla bla
+                        Ich bin nun auch auf YouTube zu finden. Hier eine kleine Auswahl meiner bisherigen Videos.
                     </p>
                 </div>
                 <motion.div className={classes.Videos}
                     initial={{ x: "-100vw" }}
                     animate={animation}
                 >
+                    {youtubeVideo("https://youtu.be/i_yD-gn5iBg", QuizTopia, quiztopiaVideoDescription)}
+
+                    {youtubeVideo("https://youtu.be/3MctlVzu3aI", WeatherNow, weatherNowVideoDescription)}
+
+                    {youtubeVideo("https://youtu.be/i_yD-gn5iBg", JavaScriptGames, gamesVideoDescription)}
+
                     {youtubeVideo("https://www.youtube.com/watch?v=hvL1339luv0", bg2, cleanCodeVideoDescription)}
 
                     {/* {youtubeVideo("https://www.youtube.com/watch?v=hvL1339luv0", bg2, javaScriptNodeJSDescription)}

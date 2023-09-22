@@ -1,6 +1,6 @@
 import classes from './Home.module.css'
-import code from './../../img/code.svg'
-import binaryWorld from './../../img/binaryWorld.png'
+import code from './../../assets/code.svg'
+import binaryWorld from './../../assets/binaryWorld.png'
 import { motion } from 'framer-motion'
 import WaveLine from './WaveLine'
 
@@ -15,7 +15,7 @@ const Home = () => {
             <motion.img 
             
             // initial={{ scale: 0 }}
-            animate={{scale: [0, 1, 0.7], rotate: 180}}
+            animate={{scale: [0, 1, 0.5], rotate: 180}}
             transition={{ delay: .41, duration: 5, ease: 'easeInOut' }} className={classes.Code} src={code} alt='code' />
             <motion.img 
             
