@@ -101,7 +101,7 @@
     display: none;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1124px) {
     .NavBar .Navigation {
         display: none;
     }
