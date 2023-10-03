@@ -107,10 +107,10 @@ const Portfolio = () => {
     
     const sliderRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [autoPlay, setAutoPlay] = useState(true);
+    const [autoPlay] = useState(true);
     const autoPlayIntervalRef = useRef(null);
 
-    const { ref, inView } = useInView(
+    const { inView } = useInView(
         {
             threshold: 0.2,
         }
@@ -136,6 +136,16 @@ const Portfolio = () => {
 
     }, [inView, animation]);
 
+    const handleNextClick = () => {
+        if (currentIndex < images.length - 1) {
+            setCurrentIndex(currentIndex + 1);
+            sliderRef.current.scrollBy({ left: sliderRef.current.clientWidth, behavior: 'smooth' });
+        } else {
+            setCurrentIndex(0);
+            sliderRef.current.scrollBy({ left: -sliderRef.current.scrollWidth, behavior: 'smooth' });
+        }
+    };
+
     useEffect(() => {
         if (autoPlay) {
             autoPlayIntervalRef.current = setInterval(() => {
@@ -151,15 +161,7 @@ const Portfolio = () => {
         };
     }, [autoPlay, currentIndex]);
 
-    const handleNextClick = () => {
-        if (currentIndex < images.length - 1) {
-            setCurrentIndex(currentIndex + 1);
-            sliderRef.current.scrollBy({ left: sliderRef.current.clientWidth, behavior: 'smooth' });
-        } else {
-            setCurrentIndex(0);
-            sliderRef.current.scrollBy({ left: -sliderRef.current.scrollWidth, behavior: 'smooth' });
-        }
-    };
+
 
     const handleImageClick = (url) => {
         window.open(url, '_blank');

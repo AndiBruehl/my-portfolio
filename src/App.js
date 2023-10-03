@@ -13,7 +13,7 @@ import YouTube from './components/YouTube/YouTube';
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App" style={{overflowX: "hidden"}}>
       <NavBar />
       <Home />
       <About />

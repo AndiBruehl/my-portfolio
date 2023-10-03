@@ -3,7 +3,7 @@
 .NavBar {
     background: #181818;
     width: 100%;
-    height: calc(2.2rem + 1vw);
+    height: calc(2.2rem + 2vw);
     position: fixed;
     z-index: 999;
     opacity: 0.9;
@@ -38,10 +38,9 @@
 }
 
 .NavBar nav ul li a.selected {
-    border-bottom: 2px solid #8C1CD1; /* Hier die gewünschte Unterstreichungsfarbe */
+    border-bottom: 2px solid #8C1CD1;
     transform: scale(1.1);
 }
-
 
 .NavBar a:hover {
     border-bottom: 5px solid #8C1CD1;
@@ -65,7 +64,6 @@
     justify-content: center;
     align-items: center;
     margin-right: 1vw;
-    /* Optional, je nachdem, wie viel Abstand du von rechts möchtest */
 }
 
 #about,
@@ -75,53 +73,33 @@
     margin-top: 80px;
 }
 
-@media (max-width: 768px) {
-    .NavBar {
-        flex-direction: column;
-    }
-
-    .NavBar nav ul li {
-        margin: 10px 10px;
-    }
-
-    /* .NavBar .Time {
-        margin-right: 7%;
-        margin-top: 1%;
-    } */
-
-    #about,
-    #skills,
-    #youtube,
-    #contact {
-        margin-top: 10px;
-    }
-}
-
-.NavBar .MobileNavigation {
+@media (min-width: 1176px){
+    .NavBar .MobileNavigation .Hamburger {
     display: none;
+    }
 }
 
-@media (max-width: 1124px) {
+@media (max-width: 1175px) {
     .NavBar .Navigation {
         display: none;
     }
 
     .NavBar .Time {
-        margin-right: 7%;
-        margin-top: 1%;
+        margin-right: 7vw;
+        margin-top: -0.4vw;
     }
 
     .NavBar .MobileNavigation {
         display: flex;
         align-items: right;
-        padding: 0.5%;
+        padding: -0.4vw;
     }
 
     .NavBar .MobileNavigation .Hamburger {
         position: absolute;
-        margin-top: -1.5%;
+        margin-top: -2.5vw;
         margin-left: 5vw;
-        right: 1%;
+        right: 1vw;
         cursor: pointer;
     }
 
@@ -141,3 +119,45 @@
         color: #8c1cd1
     }
 }
+
+@media (max-width: 500px) {
+    .NavBar .MobileNavigation {
+        display: flex;
+        align-items: left;
+        padding: 3%;
+    }
+
+    .NavBar .MobileNavigation .Hamburger {
+        position: absolute;
+        margin-top: -4vw;
+        right: 1%;
+        cursor: pointer;
+    }
+
+    .NavBar nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(2.2rem + 1vw);
+        right: 0vw;
+        width: 20vw;
+        background-color: #181818;
+        border-top: 2px solid #8c1cd1;
+        border-radius: 10px;
+        padding-right: 5vw;
+    }
+
+    .NavBar .Time {
+        margin-right: 50%;
+        margin-top: 1%;
+        font-size: 4vw;
+    }
+
+    #about,
+    #skills,
+    #youtube,
+    #contact {
+        margin-top: 10px;
+    }
+}
+
