@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/react-portfolio1/static/css/main.6ffd2d05.css",
-    "main.js": "/react-portfolio1/static/js/main.d0ca722d.js",
-    "static/media/me.png": "/react-portfolio1/static/media/me.71b99f00e9110fa94aa6.png",
-    "static/media/QuizTopia.png": "/react-portfolio1/static/media/QuizTopia.fc50ff16140b02eae146.png",
-    "static/media/JavaScripzGames.png": "/react-portfolio1/static/media/JavaScripzGames.fb5da5a00e9fc3693f69.png",
-    "static/media/background3.png": "/react-portfolio1/static/media/background3.9b444f9c234ae051ebb3.png",
-    "static/media/WeaatherNow.png": "/react-portfolio1/static/media/WeaatherNow.501fc61c38f1a8514e9c.png",
-    "static/media/image3.png": "/react-portfolio1/static/media/image3.8312e74e571fd2ec22d1.png",
-    "static/media/image1.png": "/react-portfolio1/static/media/image1.50b61733cef809ce0818.png",
-    "static/media/image4.png": "/react-portfolio1/static/media/image4.703e6b02ad17ebcddee8.png",
-    "static/media/credly_white.png": "/react-portfolio1/static/media/credly_white.624549dde8678ca0f223.png",
-    "static/media/image2.png": "/react-portfolio1/static/media/image2.16a02577ef36fa2d9bb9.png",
-    "static/media/background2.png": "/react-portfolio1/static/media/background2.5d07ba794fae14faa01a.png",
-    "static/media/binaryWorld.png": "/react-portfolio1/static/media/binaryWorld.81143922ca1901588da0.png",
-    "static/media/codeThinking.svg": "/react-portfolio1/static/media/codeThinking.5463425d5b5b08b6dffc266bbd805012.svg",
-    "static/media/code.svg": "/react-portfolio1/static/media/code.bcc3e89f293f0534789c02c60b8861f7.svg",
-    "index.html": "/react-portfolio1/index.html",
-    "main.6ffd2d05.css.map": "/react-portfolio1/static/css/main.6ffd2d05.css.map",
-    "main.d0ca722d.js.map": "/react-portfolio1/static/js/main.d0ca722d.js.map"
+    "main.css": "/my-portfolio/static/css/main.6ffd2d05.css",
+    "main.js": "/my-portfolio/static/js/main.a241e172.js",
+    "static/media/me.png": "/my-portfolio/static/media/me.71b99f00e9110fa94aa6.png",
+    "static/media/QuizTopia.png": "/my-portfolio/static/media/QuizTopia.fc50ff16140b02eae146.png",
+    "static/media/JavaScripzGames.png": "/my-portfolio/static/media/JavaScripzGames.fb5da5a00e9fc3693f69.png",
+    "static/media/background3.png": "/my-portfolio/static/media/background3.9b444f9c234ae051ebb3.png",
+    "static/media/WeaatherNow.png": "/my-portfolio/static/media/WeaatherNow.501fc61c38f1a8514e9c.png",
+    "static/media/image3.png": "/my-portfolio/static/media/image3.8312e74e571fd2ec22d1.png",
+    "static/media/image1.png": "/my-portfolio/static/media/image1.50b61733cef809ce0818.png",
+    "static/media/image4.png": "/my-portfolio/static/media/image4.703e6b02ad17ebcddee8.png",
+    "static/media/credly_white.png": "/my-portfolio/static/media/credly_white.624549dde8678ca0f223.png",
+    "static/media/image2.png": "/my-portfolio/static/media/image2.16a02577ef36fa2d9bb9.png",
+    "static/media/background2.png": "/my-portfolio/static/media/background2.5d07ba794fae14faa01a.png",
+    "static/media/binaryWorld.png": "/my-portfolio/static/media/binaryWorld.81143922ca1901588da0.png",
+    "static/media/codeThinking.svg": "/my-portfolio/static/media/codeThinking.5463425d5b5b08b6dffc266bbd805012.svg",
+    "static/media/code.svg": "/my-portfolio/static/media/code.bcc3e89f293f0534789c02c60b8861f7.svg",
+    "index.html": "/my-portfolio/index.html",
+    "main.6ffd2d05.css.map": "/my-portfolio/static/css/main.6ffd2d05.css.map",
+    "main.a241e172.js.map": "/my-portfolio/static/js/main.a241e172.js.map"
   },
   "entrypoints": [
     "static/css/main.6ffd2d05.css",
-    "static/js/main.d0ca722d.js"
+    "static/js/main.a241e172.js"
   ]
 }
