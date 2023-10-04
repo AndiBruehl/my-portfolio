@@ -12,7 +12,7 @@ import { useInView } from 'react-intersection-observer';
 
 const MotionContainer = styled(motion.div)`
     background: black;
-    height: 100vh;
+    height: 75vh;
 `;
 
 const SliderWrapper = styled.div`
