@@ -25,7 +25,7 @@ const NavLinks = (props) => {
         whileTap={{ scale: 1.2 }}
         className={selectedLink === 'Home' ? 'selected' : ''}
       >
-        <a href="/react-portfolio1/">Home</a>
+        <a href="/#">Home</a>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -36,7 +36,7 @@ const NavLinks = (props) => {
         whileTap={{ scale: 1.2 }}
         className={selectedLink === 'About Me' ? 'selected' : ''}
       >
-        <a href="/react-portfolio1/#about">About Me</a>
+        <a href="/#about">About Me</a>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -47,7 +47,7 @@ const NavLinks = (props) => {
         whileTap={{ scale: 1.2 }}
         className={selectedLink === 'Skills' ? 'selected' : ''}
       >
-        <a href="/react-portfolio1/#skills">Skills</a>
+        <a href="/#skills">Skills</a>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -58,7 +58,7 @@ const NavLinks = (props) => {
         whileTap={{ scale: 1.2 }}
         className={selectedLink === 'Portfolio' ? 'selected' : ''}
       >
-        <a href="/react-portfolio1/#portfolio">Portfolio</a>
+        <a href="/#portfolio">Portfolio</a>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -69,7 +69,7 @@ const NavLinks = (props) => {
         whileTap={{ scale: 1.2 }}
         className={selectedLink === 'YouTube' ? 'selected' : ''}
       >
-        <a href="/react-portfolio1/#youtube">YouTube</a>
+        <a href="/#youtube">YouTube</a>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -80,7 +80,7 @@ const NavLinks = (props) => {
         whileTap={{ scale: 1.2 }}
         className={selectedLink === 'Downloads' ? 'selected' : ''}
       >
-        <a href="/react-portfolio1/#downloads">Downloads</a>
+        <a href="/#downloads">Downloads</a>
       </motion.li>
       <motion.li
         initial={animateFrom}
@@ -91,7 +91,7 @@ const NavLinks = (props) => {
         whileTap={{ scale: 1.2 }}
         className={selectedLink === 'Contact' ? 'selected' : ''}
       >
-        <a href="/react-portfolio1/#contact">Contact</a>
+        <a href="/#contact">Contact</a>
       </motion.li>
     </ul>
   );
