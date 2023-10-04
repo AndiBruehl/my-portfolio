@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classes from './Contact.module.css';
-import { FaMailBulk, FaYoutube, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaMailBulk, FaYoutube, FaGithub, FaLinkedin, FaTwitch } from 'react-icons/fa';
 // import {FaEnvelope } from 'react-icons/fa';
 import credly_white from "../../assets/credly_white.png";
 // import ContactForm from './ContactForm'; // Import the ContactForm component
@@ -70,6 +70,9 @@ const Contacts = () => {
           </a>
           <a href="https://www.youtube.com/@andreasbruehldev" target="_blank">
             <FaYoutube style={youtubeIconStyle} />
+          </a>
+          <a href="https://www.twitch.tv/tigersoul89" target="_blank">
+            <FaTwitch style={youtubeIconStyle} />
           </a>
           {/* <a href="#" onClick={() => setShowEmailForm(!showEmailForm)}>
             <FaEnvelope style={messageIconStyle} />
