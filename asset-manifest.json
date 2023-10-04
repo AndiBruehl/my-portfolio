@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6ffd2d05.css",
+    "main.js": "/static/js/main.dc0be103.js",
+    "static/media/me.png": "/static/media/me.71b99f00e9110fa94aa6.png",
+    "static/media/QuizTopia.png": "/static/media/QuizTopia.fc50ff16140b02eae146.png",
+    "static/media/JavaScripzGames.png": "/static/media/JavaScripzGames.fb5da5a00e9fc3693f69.png",
+    "static/media/background3.png": "/static/media/background3.9b444f9c234ae051ebb3.png",
+    "static/media/WeaatherNow.png": "/static/media/WeaatherNow.501fc61c38f1a8514e9c.png",
+    "static/media/image3.png": "/static/media/image3.8312e74e571fd2ec22d1.png",
+    "static/media/image1.png": "/static/media/image1.50b61733cef809ce0818.png",
+    "static/media/image4.png": "/static/media/image4.703e6b02ad17ebcddee8.png",
+    "static/media/credly_white.png": "/static/media/credly_white.624549dde8678ca0f223.png",
+    "static/media/image2.png": "/static/media/image2.16a02577ef36fa2d9bb9.png",
+    "static/media/background2.png": "/static/media/background2.5d07ba794fae14faa01a.png",
+    "static/media/binaryWorld.png": "/static/media/binaryWorld.81143922ca1901588da0.png",
+    "static/media/codeThinking.svg": "/static/media/codeThinking.5463425d5b5b08b6dffc266bbd805012.svg",
+    "static/media/code.svg": "/static/media/code.bcc3e89f293f0534789c02c60b8861f7.svg",
+    "index.html": "/index.html",
+    "main.6ffd2d05.css.map": "/static/css/main.6ffd2d05.css.map",
+    "main.dc0be103.js.map": "/static/js/main.dc0be103.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ffd2d05.css",
+    "static/js/main.dc0be103.js"
+  ]
+}
