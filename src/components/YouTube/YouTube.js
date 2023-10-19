@@ -95,7 +95,9 @@ const YouTube = () => {
 
                     {youtubeVideo("https://youtu.be/i_yD-gn5iBg", JavaScriptGames, gamesVideoDescription)}
 
-                    {youtubeVideo("https://www.youtube.com/watch?v=hvL1339luv0", bg2, cleanCodeVideoDescription)}
+                    {youtubeVideo("#", bg2, cleanCodeVideoDescription)}
+
+                    {/* {youtubeVideo("https://www.youtube.com/watch?v=hvL1339luv0", bg2, cleanCodeVideoDescription)} */}
 
                     {/* {youtubeVideo("https://www.youtube.com/watch?v=hvL1339luv0", bg2, javaScriptNodeJSDescription)}
 
