@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.6ffd2d05.css",
-    "main.js": "/my-portfolio/static/js/main.6fdd7833.js",
+    "main.css": "/my-portfolio/static/css/main.c6707863.css",
+    "main.js": "/my-portfolio/static/js/main.f19cd17f.js",
     "static/media/me.png": "/my-portfolio/static/media/me.71b99f00e9110fa94aa6.png",
     "static/media/QuizTopia.png": "/my-portfolio/static/media/QuizTopia.fc50ff16140b02eae146.png",
     "static/media/JavaScripzGames.png": "/my-portfolio/static/media/JavaScripzGames.fb5da5a00e9fc3693f69.png",
@@ -17,11 +17,11 @@
     "static/media/codeThinking.svg": "/my-portfolio/static/media/codeThinking.5463425d5b5b08b6dffc266bbd805012.svg",
     "static/media/code.svg": "/my-portfolio/static/media/code.bcc3e89f293f0534789c02c60b8861f7.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.6ffd2d05.css.map": "/my-portfolio/static/css/main.6ffd2d05.css.map",
-    "main.6fdd7833.js.map": "/my-portfolio/static/js/main.6fdd7833.js.map"
+    "main.c6707863.css.map": "/my-portfolio/static/css/main.c6707863.css.map",
+    "main.f19cd17f.js.map": "/my-portfolio/static/js/main.f19cd17f.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ffd2d05.css",
-    "static/js/main.6fdd7833.js"
+    "static/css/main.c6707863.css",
+    "static/js/main.f19cd17f.js"
   ]
 }
