@@ -43,7 +43,7 @@ const youtubeVideo = (url, thumbnail, description) => {
 const quiztopiaVideoDescription = 'QuizTopia - Eine Online-Quiz-App';
 const weatherNowVideoDescription = 'WeatherNow - Das aktuelle Wetter für JEDEN Ort der Welt prüfen!';
 const gamesVideoDescription = 'TicTacToe und ein FlappyBird-Klon zum Zeitvertreib für zwischendurch!';
-const cleanCodeVideoDescription = 'NICHT KLICKEN! SENSIBLER INHALT!';
+const cleanCodeVideoDescription = '...weitere Videos folgen...';
 // const javaScriptNodeJSDescription = 'Video2 - Platzhalter';
 // const background2Description = 'Video3 - Platzhalter';
 
@@ -95,7 +95,9 @@ const YouTube = () => {
 
                     {youtubeVideo("https://youtu.be/i_yD-gn5iBg", JavaScriptGames, gamesVideoDescription)}
 
-                    {youtubeVideo("https://www.youtube.com/watch?v=hvL1339luv0", bg2, cleanCodeVideoDescription)}
+                    {youtubeVideo("#", bg2, cleanCodeVideoDescription)}
+
+                    {/* {youtubeVideo("https://www.youtube.com/watch?v=hvL1339luv0", bg2, cleanCodeVideoDescription)} */}
 
                     {/* {youtubeVideo("https://www.youtube.com/watch?v=hvL1339luv0", bg2, javaScriptNodeJSDescription)}
 
