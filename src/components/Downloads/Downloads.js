@@ -55,7 +55,16 @@ const Downloads = () => {
     const h2Style = {
         fontWeight: 'normal',
         fontSize: '26px',
-        marginBottom: '20px',
+        marginBottom: '15px',
+        fontStyle: 'italic bold',
+        fontFamily: '"Playfair Display", serif',
+        color: 'white',
+    };
+
+    const h3Style = {
+        fontWeight: 'normal',
+        fontSize: '16px',
+        marginBottom: '16px',
         fontStyle: 'italic bold',
         fontFamily: '"Playfair Display", serif',
         color: 'white',
@@ -129,6 +138,7 @@ const Downloads = () => {
                         <div className="welcome-section" style={containerStyles}>
                             <div style={textContainerStyles}>
                                 <h2 style={h2Style}>Downloads</h2>
+                                <h3 style={h3Style}>(Weiterleitung erfolgt auf GoogleDrive, dort stehen die Dateien zur Verfügung.)</h3>
                                 <br></br>
                                 <p style={paragraphStyles}>
                                     <a href="Lebenslauf-Download" onClick={handleDownloadCV} style={linkStyles}>

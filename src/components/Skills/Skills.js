@@ -8,7 +8,7 @@ const backendSkills =
     <ul key="backend">
         <li style={listTitleStyle}> BACKEND</li>
         <li>SQL - NoSQL - Python</li>
-        <li>NodeJS</li>
+        <li>NodeJS - mariaDB - MongoDB</li>
     </ul>
 const frontendSkills =
     <ul key="frontend">
@@ -28,13 +28,15 @@ const cloudSkills =
     </ul>
 const containerSkills =
     <ul key="container">
-        <li style={listTitleStyle}> CONTAINER</li>
-        <li>Docker</li>
+        <li style={listTitleStyle}> CONTAINER und DevOps</li>
+        <li>Docker - Ansible - Jenkins</li>
+        <li>Terraform - CI/CD - GitHub-Actions</li>
     </ul>
 const otherSkills =
     <ul key="others">
         <li style={listTitleStyle}> WEITERE SKILLS</li>
-        <li>Git - firebase - SCRUM</li>
+        <li>GitHub - firebase - SCRUM </li>
+        <li></li>
     </ul>;
 
 const totalSkills = [backendSkills, frontendSkills, osSkills, cloudSkills, containerSkills, otherSkills];
