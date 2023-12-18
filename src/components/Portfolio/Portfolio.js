@@ -1,80 +1,25 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import styled from 'styled-components';
-import { motion, useAnimation } from 'framer-motion';
-import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
+
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 import PageHeader from '../PageHeader/PageHeader';
-import img1 from '../../assets/image1.png';
-import img2 from '../../assets/image2.png';
-import img3 from '../../assets/image3.png';
-import img4 from '../../assets/image4.png';
-import classes from './Portfolio.module.css'
-import { useInView } from 'react-intersection-observer';
 
-const MotionContainer = styled(motion.div)`
-    background: black;
-    height: 100vh;
-`;
+import './Portfolio.css'
 
-const SliderWrapper = styled.div`
-    position: relative;
-    max-width: 40%;
-    margin-left: 30%; 
-`;
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
-const Slider = styled(motion.div)`
-    display: flex;
-    aspect-ratio: 16 / 9;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    border-radius: 20px;
-    position: relative;
-`;
-
-const SliderImage = styled(motion.img)`
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-    width: 30%;
-`;
-
-
-const SliderNav = styled.div`
-    display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-`;
-
-const SliderNavItem = styled(motion.div)`
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: darkgrey;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-    &:hover {
-        opacity: 1;
-    }
-`;
-
-const ActionButton = styled(motion.div)`
-    position: absolute;
-    top: 50%;
-    right: 3%;
-    transform: translateY(-50%);
-    border-radius: 100%;
-    background: rgba(0, 0, 255, 0.5);
-    padding: 1%;
-    z-index: 2;
-    transition: background-color 0.3s ease;
-    &:hover {
-        background: rgba(0, 0, 255, 0.8);
-    }
-`;
-
+import slide_image_1 from './assets/images/image1.png';
+import slide_image_2 from './assets/images/image2.png';
+import slide_image_3 from './assets/images/image3.png';
+import slide_image_4 from './assets/images/image4.png';
+import slide_image_5 from './assets/images/image5.png';
+import slide_image_6 from './assets/images/image6.png';
+import slide_image_7 from './assets/images/image7.png';
 
 const Header = styled.h2`
     text-align: center;
@@ -94,132 +39,77 @@ const Footer = styled.h2`
 
 
 
-
-
-const images = [
-    { url: 'https://andibruehl.github.io/JavaScriptGames/', src: img1 },
-    { url: 'https://github.com/AndiBruehl', src: img2 },
-    { url: 'https://andibruehl.github.io/Quiztopia/', src: img3 },
-    { url: 'https://andibruehl.github.io/WeatherNow/', src: img4 },
-];
-
 const Portfolio = () => {
-    
-    const sliderRef = useRef(null);
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [autoPlay] = useState(true);
-    const autoPlayIntervalRef = useRef(null);
-
-    const { inView } = useInView(
-        {
-            threshold: 0.2,
-        }
-    );
-    const animation = useAnimation();
-
-    useEffect(() => {
-        const animateInView = async () => {
-            if (inView) {
-                await animation.start({
-                    x: 0,
-                    transition: { type: "spring", duration: 1, bounce: 0.3 }
-                });
-            }
-            if (!inView) {
-                await animation.start({
-                    x: '-100vw',
-                });
-            }
-        }
-
-        animateInView(); // Aufruf der Animation
-
-    }, [inView, animation]);
-
-    const handleNextClick = () => {
-        if (currentIndex < images.length - 1) {
-            setCurrentIndex(currentIndex + 1);
-            sliderRef.current.scrollBy({ left: sliderRef.current.clientWidth, behavior: 'smooth' });
-        } else {
-            setCurrentIndex(0);
-            sliderRef.current.scrollBy({ left: -sliderRef.current.scrollWidth, behavior: 'smooth' });
-        }
-    };
-
-    useEffect(() => {
-        if (autoPlay) {
-            autoPlayIntervalRef.current = setInterval(() => {
-                handleNextClick();
-            }, 5000); // Change image every 5 seconds
-        } else {
-            clearInterval(autoPlayIntervalRef.current);
-        }
-
-        return () => {
-            
-            clearInterval(autoPlayIntervalRef.current);
-        };
-    }, [autoPlay, currentIndex]);
-
-
-
-    const handleImageClick = (url) => {
-        window.open(url, '_blank');
-    };
 
     return (
-        
-        <MotionContainer
-        
-            initial={{ opacity: 0 }} // Set initial opacity to 1
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className={classes.Portfolio} id="portfolio">
-            <PageHeader title={'Portfolio'} />
-            <Header>Beispiele meiner Arbeiten:</Header>
-            <SliderWrapper>
-                <Slider
-                    ref={sliderRef}
-                    initial={{ opacity: 1 }} // Set initial opacity to 1
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
+
+        <div className="container" style={{ backgroundColor: 'black' }}>
+            <div id="portfolio">
+                <PageHeader title={'Portfolio'} />
+                <Header>Beispiele meiner Arbeiten:</Header>
+                <Swiper
+                    effect={"coverflow"}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    loop={true}
+                    slidesPerView={'auto'}
+                    coverflowEffect={
+                        {
+                            rotate: 0,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 2.5,
+                        }
+                    }
+                    pagination={{ el: '.swiper-pagination', clickable: true }}
+                    navigation={{
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                        clickable: true,
+                    }}
+                    modules={[EffectCoverflow, Pagination, Navigation]}
+                    className="swiper_container"
                 >
-                    {images.map((image, index) => (
-                        <SliderImage
-                            key={index}
-                            src={image.src}
-                            alt={`Image ${index}`}
-                            onClick={() => handleImageClick(image.url)}
-                            initial={{ opacity: index === currentIndex ? 1 : 0 }} // Set initial opacity based on currentIndex
-                            animate={{ opacity: index === currentIndex ? 1 : 0 }}
-                            transition={{ opacity: { duration: 0.8 } }}
-                        />
-                    ))}
-                </Slider>
-                <ActionButton
-                    onClick={handleNextClick}
-                    initial={{ opacity: 1 }} // Set initial opacity to 1
-                    animate={{ opacity: 1 }}
-                    whileHover={{ scale: 1.1 }}
-                >
-                    <MdKeyboardDoubleArrowRight />
-                </ActionButton>
-                <SliderNav>
-                    {images.map((_, index) => (
-                        <SliderNavItem
-                            key={index}
-                            className={index === currentIndex ? 'active' : ''}
-                            style={{ backgroundColor: index === currentIndex ? 'blue' : 'lightblue' }}
-                            initial={{ opacity: 0.75 }}
-                            animate={{ opacity: index === currentIndex ? 1 : 0.75 }}
-                            whileHover={{ opacity: 1 }}
-                        />
-                    ))}
-                </SliderNav>
-            </SliderWrapper>
-            <Footer>Auf eines der Bilder klicken, um weitergeleitet zu werden.</Footer>
-        </MotionContainer>
-    );
+                    <SwiperSlide>
+                        <img src={slide_image_1} alt="slide_image_1" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide_image_2} alt="slide_image_2" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide_image_3} alt="slide_image_3" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide_image_4} alt="slide_image_4" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide_image_5} alt="slide_image_5" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide_image_6} alt="slide_image_5" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide_image_7} alt="slide_image_7" />
+                    </SwiperSlide>
+
+                    <div className="slider-controller">
+                        <div className="swiper-button-prev slider-arrow">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                        </div>
+                        <div className="swiper-button-next slider-arrow">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </div>
+                        <div className="swiper-pagination">
+
+                        </div>
+                    </div>
+                </Swiper>
+
+            </div>
+        </div>
+
+    )
+
 };
 
 export default Portfolio;
