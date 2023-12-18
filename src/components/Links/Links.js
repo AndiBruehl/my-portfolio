@@ -62,6 +62,7 @@ const Links = () => {
         marginBottom: '20px',
         fontFamily: '"Playfair Display", serif',
         color: 'white',
+        textDecoration: 'none',
     };
 
     const linkStyles = {
@@ -108,8 +109,15 @@ const Links = () => {
 
                                 <p style={paragraphStyles}>
                                     <a href="https://bastiwho.github.io/WeatherNow/" target='_blank'>
-                                        <img src="https://www.svgrepo.com/show/494028/weather-2.svg" width="20px" height="20px" alt="WeatherNow" style={svgStyles} />
-                                        WeatherNow - Alternativ Landingpage</a>
+                                        <img
+                                            src="https://www.svgrepo.com/show/494028/weather-2.svg"
+                                            width="20px"
+                                            height="20px"
+                                            alt="WeatherNow"
+                                            style={svgStyles}
+                                        />
+                                        WeatherNow - Alternativ Landingpage (made by <a href="https://github.com/bastiwho" target='_blank'>@BastiWho</a>)
+                                    </a>
                                 </p>
 
 

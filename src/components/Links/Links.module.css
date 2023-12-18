@@ -2,3 +2,7 @@
     background-color: #141313;
     padding-bottom: 20%;
 }
+
+.Links a {
+    text-decoration: none;
+  }
