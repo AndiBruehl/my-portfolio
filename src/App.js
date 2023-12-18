@@ -8,6 +8,7 @@ import NavBar from './components/NavBar/NavBar';
 import Portfolio from './components/Portfolio/Portfolio';
 import Skills from './components/Skills/Skills';
 import YouTube from './components/YouTube/YouTube';
+import Links from './components/Links/Links';
 
 
 
@@ -19,6 +20,7 @@ const App = () => {
       <About />
       <Skills />
       <Portfolio />
+      <Links />
       <YouTube />
       <Downloads />
       <Contact />

@@ -63,6 +63,17 @@ const NavLinks = (props) => {
       <motion.li
         initial={animateFrom}
         animate={animateTo}
+        transition={{ delay: 0.20 }}
+        onClick={() => handleLinkClick('Links')}
+        whileHover={{ scale: 1.3 }}
+        whileTap={{ scale: 1.2 }}
+        className={selectedLink === 'Links' ? 'selected' : ''}
+      >
+        <a href="/my-portfolio/#links">Links</a>
+      </motion.li>
+      <motion.li
+        initial={animateFrom}
+        animate={animateTo}
         transition={{ delay: 0.30 }}
         onClick={() => handleLinkClick('YouTube')}
         whileHover={{ scale: 1.3 }}
