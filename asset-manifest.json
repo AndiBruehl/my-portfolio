@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.6894b5a5.css",
-    "main.js": "/my-portfolio/static/js/main.5e9ffcae.js",
+    "main.css": "/my-portfolio/static/css/main.e872732b.css",
+    "main.js": "/my-portfolio/static/js/main.a3128eb6.js",
     "static/media/me.png": "/my-portfolio/static/media/me.71b99f00e9110fa94aa6.png",
     "static/media/image7.png": "/my-portfolio/static/media/image7.ddcff3d0a2a8a15b6986.png",
     "static/media/QuizTopia.png": "/my-portfolio/static/media/QuizTopia.fc50ff16140b02eae146.png",
@@ -20,11 +20,11 @@
     "static/media/codeThinking.svg": "/my-portfolio/static/media/codeThinking.5463425d5b5b08b6dffc266bbd805012.svg",
     "static/media/code.svg": "/my-portfolio/static/media/code.bcc3e89f293f0534789c02c60b8861f7.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.6894b5a5.css.map": "/my-portfolio/static/css/main.6894b5a5.css.map",
-    "main.5e9ffcae.js.map": "/my-portfolio/static/js/main.5e9ffcae.js.map"
+    "main.e872732b.css.map": "/my-portfolio/static/css/main.e872732b.css.map",
+    "main.a3128eb6.js.map": "/my-portfolio/static/js/main.a3128eb6.js.map"
   },
   "entrypoints": [
-    "static/css/main.6894b5a5.css",
-    "static/js/main.5e9ffcae.js"
+    "static/css/main.e872732b.css",
+    "static/js/main.a3128eb6.js"
   ]
 }
