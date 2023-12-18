@@ -116,7 +116,7 @@ const Links = () => {
                                             alt="WeatherNow"
                                             style={svgStyles}
                                         />
-                                        WeatherNow - Alternative Landingpage (made by <a href="https://github.com/bastiwho" target='_blank'>@BastiWho</a>)
+                                        WeatherNow - Alternative Landingpage <a href="https://github.com/bastiwho" target='_blank'>(made by @BastiWho)</a>
                                     </a>
                                 </p>
 
