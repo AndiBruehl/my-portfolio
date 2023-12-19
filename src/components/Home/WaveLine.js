@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import React from 'react';
+import classes from './WaveLine.module.css';
+
 
 const WaveLine = () => {
     return (
