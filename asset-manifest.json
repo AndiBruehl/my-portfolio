@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.2a92aeeb.css",
-    "main.js": "/my-portfolio/static/js/main.2b1c97dc.js",
+    "main.css": "/my-portfolio/static/css/main.6f967d49.css",
+    "main.js": "/my-portfolio/static/js/main.cb20e4f2.js",
+    "static/media/xmastree.png": "/my-portfolio/static/media/xmastree.6c39273938d3c7a2ef1c.png",
     "static/media/me.png": "/my-portfolio/static/media/me.71b99f00e9110fa94aa6.png",
     "static/media/image7.png": "/my-portfolio/static/media/image7.ddcff3d0a2a8a15b6986.png",
     "static/media/QuizTopia.png": "/my-portfolio/static/media/QuizTopia.fc50ff16140b02eae146.png",
+    "static/media/xmaslights.png": "/my-portfolio/static/media/xmaslights.e296eb20b421d629d73f.png",
     "static/media/JavaScripzGames.png": "/my-portfolio/static/media/JavaScripzGames.fb5da5a00e9fc3693f69.png",
     "static/media/background3.png": "/my-portfolio/static/media/background3.9b444f9c234ae051ebb3.png",
     "static/media/WeaatherNow.png": "/my-portfolio/static/media/WeaatherNow.501fc61c38f1a8514e9c.png",
@@ -15,16 +17,16 @@
     "static/media/image1.png": "/my-portfolio/static/media/image1.16a02577ef36fa2d9bb9.png",
     "static/media/image5.png": "/my-portfolio/static/media/image5.0b783c77e70175059201.png",
     "static/media/background2.png": "/my-portfolio/static/media/background2.5d07ba794fae14faa01a.png",
-    "static/media/binaryWorld.png": "/my-portfolio/static/media/binaryWorld.81143922ca1901588da0.png",
+    "static/media/binaryWorld.png": "/my-portfolio/static/media/binaryWorld.cb58b903d91a6a766f9a.png",
     "static/media/image6.png": "/my-portfolio/static/media/image6.0df6638bcb9fbb119d37.png",
     "static/media/codeThinking.svg": "/my-portfolio/static/media/codeThinking.5463425d5b5b08b6dffc266bbd805012.svg",
     "static/media/code.svg": "/my-portfolio/static/media/code.bcc3e89f293f0534789c02c60b8861f7.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.2a92aeeb.css.map": "/my-portfolio/static/css/main.2a92aeeb.css.map",
-    "main.2b1c97dc.js.map": "/my-portfolio/static/js/main.2b1c97dc.js.map"
+    "main.6f967d49.css.map": "/my-portfolio/static/css/main.6f967d49.css.map",
+    "main.cb20e4f2.js.map": "/my-portfolio/static/js/main.cb20e4f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a92aeeb.css",
-    "static/js/main.2b1c97dc.js"
+    "static/css/main.6f967d49.css",
+    "static/js/main.cb20e4f2.js"
   ]
 }
