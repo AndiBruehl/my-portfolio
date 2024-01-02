@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import classes from './NavBar.module.css';
 import MobileNavigation from './MobileNavigation';
 import Navigation from './Navigation';
-import xmasTree from './../../assets/xmastree.png'
+// import xmasTree from './../../assets/xmastree.png'
 
 
 const NavBar = () => {
@@ -34,7 +34,7 @@ const NavBar = () => {
   return (
     <div>
       <div className={classes.NavBar}>
-        <img src={xmasTree} style={{ height: '4vh', zIndex: '200', marginRight: '-40vw' }}></img>
+        {/* <img src={xmasTree} style={{ height: '4vh', zIndex: '200', marginRight: '-40vw' }}></img> */}
         <Navigation />
         <MobileNavigation />
         <div className={classes.Time}>{currentDayOfWeek}, {formattedDateTime} Uhr</div>

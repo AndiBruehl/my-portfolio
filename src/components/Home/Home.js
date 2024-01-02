@@ -5,20 +5,16 @@ import code from './../../assets/code.svg';
 import binaryWorld from './../../assets/binaryWorld.png';
 import { motion } from 'framer-motion';
 import WaveLine from './WaveLine';
-import xmasLights from './../../assets/xmaslights.png';
 
 const Home = () => {
   return (
     <div className={classes.Home} id="/">
-      {/* <div>
-        <img src={xmasLights} style={{ width: '100vw', height: '5vw', zIndex: '1', marginTop: '-10vh' }} alt="Xmas Lights" />
-      </div> */}
 
       <div className={classes.Container}>
         <h1 className={classes.Hello}>Hallo Welt!</h1>
         <h1>Willkommen auf meiner Website!</h1>
-        <p style={{ marginLeft: '8vw' }}>Ich wünsche allen Besuchern eine wundervolle Weihnachtszeit</p>
-        <p style={{ marginLeft: '19.1vw' }}>und einen guten Rutsch ins neue Jahr! 🎅🏻🎄</p>
+        {/* <p style={{ marginLeft: '8vw' }}>Ich wünsche allen Besuchern eine wundervolle Weihnachtszeit</p>
+        <p style={{ marginLeft: '19.1vw' }}>und einen guten Rutsch ins neue Jahr! 🎅🏻🎄</p> */}
       </div>
 
       <motion.img
