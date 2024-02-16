@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.350fd517.css",
-    "main.js": "/my-portfolio/static/js/main.c0382e61.js",
+    "main.js": "/my-portfolio/static/js/main.3383935c.js",
     "static/media/me.png": "/my-portfolio/static/media/me.71b99f00e9110fa94aa6.png",
+    "static/media/image8.png": "/my-portfolio/static/media/image8.95db0194d80da147dbaf.png",
     "static/media/image7.png": "/my-portfolio/static/media/image7.ddcff3d0a2a8a15b6986.png",
     "static/media/QuizTopia.png": "/my-portfolio/static/media/QuizTopia.fc50ff16140b02eae146.png",
     "static/media/JavaScripzGames.png": "/my-portfolio/static/media/JavaScripzGames.fb5da5a00e9fc3693f69.png",
@@ -17,14 +18,15 @@
     "static/media/background2.png": "/my-portfolio/static/media/background2.5d07ba794fae14faa01a.png",
     "static/media/binaryWorld.png": "/my-portfolio/static/media/binaryWorld.81143922ca1901588da0.png",
     "static/media/image6.png": "/my-portfolio/static/media/image6.0df6638bcb9fbb119d37.png",
+    "static/media/image9.png": "/my-portfolio/static/media/image9.6b9f6164bc29dcca99fd.png",
     "static/media/codeThinking.svg": "/my-portfolio/static/media/codeThinking.5463425d5b5b08b6dffc266bbd805012.svg",
     "static/media/code.svg": "/my-portfolio/static/media/code.bcc3e89f293f0534789c02c60b8861f7.svg",
     "index.html": "/my-portfolio/index.html",
     "main.350fd517.css.map": "/my-portfolio/static/css/main.350fd517.css.map",
-    "main.c0382e61.js.map": "/my-portfolio/static/js/main.c0382e61.js.map"
+    "main.3383935c.js.map": "/my-portfolio/static/js/main.3383935c.js.map"
   },
   "entrypoints": [
     "static/css/main.350fd517.css",
-    "static/js/main.c0382e61.js"
+    "static/js/main.3383935c.js"
   ]
 }
