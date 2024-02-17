@@ -31,14 +31,6 @@ const Header = styled.h2`
     font-family: 'Playfair Display', serif;
 `;
 
-const Footer = styled.h2`
-    text-align: center;
-    color: azure;
-    margin-top: 4%;
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 4%;
-`;
-
 const Portfolio = () => {
 
     return (

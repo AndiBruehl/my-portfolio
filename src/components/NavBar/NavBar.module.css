@@ -73,13 +73,13 @@
     margin-top: 80px;
 }
 
-@media (min-width: 1176px){
+@media (min-width: 1426px){
     .NavBar .MobileNavigation .Hamburger {
     display: none;
     }
 }
 
-@media (max-width: 1175px) {
+@media (max-width: 1425px) {
     .NavBar .Navigation {
         display: none;
     }
@@ -97,7 +97,7 @@
 
     .NavBar .MobileNavigation .Hamburger {
         position: absolute;
-        margin-top: -2.5vw;
+        margin-top: -1%;
         margin-left: 5vw;
         right: 1vw;
         cursor: pointer;
@@ -120,7 +120,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .NavBar .MobileNavigation {
         display: flex;
         align-items: left;
@@ -129,8 +129,8 @@
 
     .NavBar .MobileNavigation .Hamburger {
         position: absolute;
-        margin-top: -4vw;
-        right: 1%;
+        margin-top: -2%;
+        right: 0.75%;
         cursor: pointer;
     }
 
@@ -149,7 +149,7 @@
 
     .NavBar .Time {
         margin-right: 50%;
-        margin-top: 1%;
+        margin-top: 0.75%;
         font-size: 4vw;
     }
 

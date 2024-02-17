@@ -85,6 +85,17 @@ const NavLinks = (props) => {
       <motion.li
         initial={animateFrom}
         animate={animateTo}
+        transition={{ delay: 0.30 }}
+        onClick={() => handleLinkClick('Certs')}
+        whileHover={{ scale: 1.3 }}
+        whileTap={{ scale: 1.2 }}
+        className={selectedLink === 'Certs' ? 'selected' : ''}
+      >
+        <a href="/my-portfolio/#certs">Certificates</a>
+      </motion.li>
+      <motion.li
+        initial={animateFrom}
+        animate={animateTo}
         transition={{ delay: 0.35 }}
         onClick={() => handleLinkClick('Downloads')}
         whileHover={{ scale: 1.3 }}

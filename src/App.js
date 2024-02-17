@@ -9,6 +9,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Skills from './components/Skills/Skills';
 import YouTube from './components/YouTube/YouTube';
 import Links from './components/Links/Links';
+import Certs from './components/Certs/Certs';
 
 
 
@@ -22,8 +23,10 @@ const App = () => {
       <Portfolio />
       <Links />
       <YouTube />
+      <Certs/>
       <Downloads />
       <Contact />
+
     </div>
   );
 }
