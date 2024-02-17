@@ -104,6 +104,48 @@ const Downloads = () => {
         document.body.removeChild(a);
     };
 
+    const handleDownloadSkills = (event) => {
+        event.preventDefault(); // Verhindere die Standardaktion des Links
+
+        // Erstelle einen Link zur PDF-Datei (direkter Dateiname)
+        const pdfLink = 'https://drive.google.com/file/d/1urRS9fvujHhxPBDEK61RCdf37leK_XxG/view?usp=drive_link';
+
+        // Erstelle ein unsichtbares a-Element
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = pdfLink;
+        a.target = '_blank'; // Open in a new tab
+        a.rel = 'noopener noreferrer'; // Security best practice for opening in a new tab
+
+        // Füge das a-Element zum DOM hinzu und simuliere den Klick
+        document.body.appendChild(a);
+        a.click();
+
+        // Entferne das a-Element aus dem DOM
+        document.body.removeChild(a);
+    };
+
+    const handleDownloadCert = (event) => {
+        event.preventDefault(); // Verhindere die Standardaktion des Links
+
+        // Erstelle einen Link zur PDF-Datei (direkter Dateiname)
+        const pdfLink = 'https://drive.google.com/file/d/1u_SyuTjzGjP2JSackQn0iupN6wUr7a07/view?usp=drive_link';
+
+        // Erstelle ein unsichtbares a-Element
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = pdfLink;
+        a.target = '_blank'; // Open in a new tab
+        a.rel = 'noopener noreferrer'; // Security best practice for opening in a new tab
+
+        // Füge das a-Element zum DOM hinzu und simuliere den Klick
+        document.body.appendChild(a);
+        a.click();
+
+        // Entferne das a-Element aus dem DOM
+        document.body.removeChild(a);
+    };
+
     const handleDownloadQuizApp = (event) => {
         event.preventDefault(); // Verhindere die Standardaktion des Links
 
@@ -148,6 +190,16 @@ const Downloads = () => {
                                 <p style={paragraphStyles}>
                                     <a href="QuizApp-Download" onClick={handleDownloadQuizApp} style={linkStyles}>
                                         ↓ QuizTopia-App offline (Windows)
+                                    </a>
+                                </p>
+                                <p style={paragraphStyles}>
+                                    <a href="Skillnachweis-Download" onClick={handleDownloadSkills} style={linkStyles}>
+                                        ↓ Skillnachweise als PDF
+                                    </a>
+                                </p>
+                                <p style={paragraphStyles}>
+                                    <a href="Zertifikat-Download" onClick={handleDownloadCert} style={linkStyles}>
+                                        ↓ TechStarter-Abschlusszertifikat als PDF
                                     </a>
                                 </p>
                             </div>

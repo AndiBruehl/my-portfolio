@@ -48,7 +48,7 @@ const About = () => {
                 <div className={classes.Text}>
                     <h2>Hallo, ich bin Andreas Brühl ...</h2>
                     <p  >
-                        ... ein begeisterter DevOps-Experte in Ausbildung und AWS Cloud Practitioner auf der Suche nach einem Fullstack-Job. Meine Reise in die Technologie begann früh, und meine Leidenschaft dafür hat mich bis heute nicht losgelassen.                        </p>
+                        ... ein begeisterter DevOps-Experte und AWS Cloud Practitioner auf der Suche nach einem Fullstack-Job. Meine Reise in die Technologie begann früh, und meine Leidenschaft dafür hat mich bis heute nicht losgelassen.                        </p>
                     <p  >
                         Ich verfüge über umfangreiche Kenntnisse und Erfahrungen in der Entwicklung und Bereitstellung moderner Webanwendungen. Meine Fähigkeiten umfassen Node.js, JavaScript, Python, React.js, HTML/CSS sowie die Arbeit mit Linux und Windows. Mit diesem breiten Wissensspektrum bin ich in der Lage, Lösungen auf allen Ebenen des Stacks zu entwickeln und zu optimieren.
                     </p>
