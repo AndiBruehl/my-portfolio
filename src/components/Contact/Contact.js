@@ -3,28 +3,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import classes from './Contact.module.css';
-import { FaMailBulk, FaYoutube, FaGithub, FaLinkedin, FaTwitch, FaEnvelope } from 'react-icons/fa';
+import { FaMailBulk, FaYoutube, FaGithub, FaLinkedin, FaTwitch } from 'react-icons/fa';
+import { GrContact } from "react-icons/gr";
 import credly_white from "../../assets/credly_white.png";
 import ContactForm from './ContactForm';
 
 const Contacts = () => {
 
   const openContactForm = () => {
-    // Berechnen der Position des Fensters, um es zentriert zu platzieren
+    // Calculate the position of the window to center it
     const screenWidth = window.screen.width;
     const screenHeight = window.screen.height;
-    const windowWidth = 640; // Die Breite des neuen Fensters
-    const windowHeight = 480; // Die Höhe des neuen Fensters
+    const windowWidth = 640; // The width of the new window
+    const windowHeight = 480; // The height of the new window
     const left = (screenWidth - windowWidth) / 2;
     const top = (screenHeight - windowHeight) / 2;
   
-    // Öffnen des neuen Fensters und Zentrieren
+    // Open the new window and center it
     const ContactFormWindow = window.open("", "_blank", `width=${windowWidth},height=${windowHeight},left=${left},top=${top}`);
-    ContactFormWindow.document.write("<html><head><title>Kontakt</title></head><body>");
+    ContactFormWindow.document.write("<html><head><title>Contact</title></head><body>");
     ContactFormWindow.document.write("<div id='ContactForm'></div>");
     ContactFormWindow.document.write("</body></html>");
   
-    // Rendern des ContactForm in das neue Fenster
+    // Render the ContactForm into the new window
     ReactDOM.render(<ContactForm />, ContactFormWindow.document.getElementById("ContactForm"));
   };
   
@@ -72,26 +73,27 @@ const Contacts = () => {
     <div className={classes.Contact} id="contact">
       <div className={classes.ContactIcons}>
         <div className="footer-icons">
-          <a href="https://github.com/AndiBruehl" target="_blank">
+          <a href="https://github.com/AndiBruehl" target="_blank" rel="noreferrer">
             <FaGithub style={githubIconStyle} />
           </a>
-          <a href="https://www.linkedin.com/in/andreas-br%C3%BChl/" target="_blank">
+          <a href="https://www.linkedin.com/in/andreas-br%C3%BChl/" target="_blank" rel="noreferrer">
             <FaLinkedin style={linkedInIconStyle} />
           </a>
-          <a href="mailto:a.bruehl2019@gmail.com" target="_blank">
+          <a href="mailto:a.bruehl2019@gmail.com" target="_blank" rel="noreferrer">
             <FaMailBulk style={emailIconStyle} />
           </a>
-          <a href="https://www.credly.com/users/andreas-bruhl/badges" target="_blank">
+          <a href="https://www.credly.com/users/andreas-bruhl/badges" target="_blank" rel="noreferrer">
             <img src={credly_white} alt="Credly" style={credlyIconStyle} />
           </a>
-          <a href="https://www.youtube.com/@andreasbruehldev" target="_blank">
+          <a href="https://www.youtube.com/@andreasbruehldev" target="_blank" rel="noreferrer">
             <FaYoutube style={youtubeIconStyle} />
           </a>
-          <a href="https://www.twitch.tv/tigersoul89" target="_blank">
+          <a href="https://www.twitch.tv/tigersoul89" target="_blank" rel="noreferrer">
             <FaTwitch style={youtubeIconStyle} />
           </a>
-          <a href="" onClick={e => { e.preventDefault(); openContactForm(); }}> 
-            <FaEnvelope style={messageIconStyle} />
+          {/* Add a valid href or use a button instead */}
+          <a href="#contact-form" onClick={e => { e.preventDefault(); openContactForm(); }}> 
+            <GrContact style={messageIconStyle} />
           </a>
         </div>
       </div>
