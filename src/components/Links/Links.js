@@ -140,6 +140,12 @@ const Links = () => {
                                         bookiesList-Website</a>
                                 </p>
 
+                                <p style={paragraphStyles}>
+                                    <a href="https://liefermax-mu.vercel.app/" target='_blank'>
+                                        <img src="https://www.svgrepo.com/show/482679/cook-hat.svg" width="20px" height="20px" alt="bookiesList" style={svgStyles} />
+                                        LieferMax - Dein LieferService!</a>
+                                </p>
+
                             </div>
                         </div>
                     </div>

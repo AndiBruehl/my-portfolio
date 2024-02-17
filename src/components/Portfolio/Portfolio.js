@@ -20,6 +20,8 @@ import slide_image_4 from './assets/images/image4.png';
 import slide_image_5 from './assets/images/image5.png';
 import slide_image_6 from './assets/images/image6.png';
 import slide_image_7 from './assets/images/image7.png';
+import slide_image_8 from './assets/images/image8.png';
+import slide_image_9 from './assets/images/image9.png';
 
 const Header = styled.h2`
     text-align: center;
@@ -36,8 +38,6 @@ const Footer = styled.h2`
     font-family: 'Playfair Display', serif;
     margin-bottom: 4%;
 `;
-
-
 
 const Portfolio = () => {
 
@@ -72,24 +72,40 @@ const Portfolio = () => {
                 >
                     <SwiperSlide>
                         <img src={slide_image_1} alt="slide_image_1" />
+                        <p style={{ textAlign: 'center' }}>Sample Code in VSCode</p>
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={slide_image_2} alt="slide_image_2" />
+                        <p style={{ textAlign: 'center' }}>JavaScriptGames</p>
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={slide_image_3} alt="slide_image_3" />
+                        <p style={{ textAlign: 'center' }}>QuizTopia</p>
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={slide_image_4} alt="slide_image_4" />
+                        <p style={{ textAlign: 'center' }}>WeatherNow</p>
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={slide_image_5} alt="slide_image_5" />
+                        <p style={{ textAlign: 'center' }}>Fighting-Samurai</p>
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={slide_image_6} alt="slide_image_5" />
+                        <p style={{ textAlign: 'center' }}>PokemonStyle-Game</p>
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={slide_image_7} alt="slide_image_7" />
+                        <p style={{ textAlign: 'center' }}>bookiesList-Website</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide_image_8} alt="slide_image_8" />
+                        <p style={{ textAlign: 'center' }}>LieferMax </p>
+                        <p style={{ textAlign: 'center', marginTop: '-3.5rem'}}>- Dein LieferService! -</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide_image_9} alt="slide_image_9" />
+                        <p style={{ textAlign: 'center' }}>Aktien-App mit Electron</p>
                     </SwiperSlide>
 
                     <div className="slider-controller">

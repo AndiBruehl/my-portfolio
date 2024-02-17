@@ -10,19 +10,15 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "portfolio_service",
-        "portfolio_template",
+        "service_bookieslist",
+        "template_contact",
         e.target,
-        "9B5cuouAeSD6WAoCF"
+        "J6u8Ve30HbzdDZmPG"
       )
       .then(
         (result) => {
           console.log(result.text);
           setIsEmailSent(true);
-          setTimeout(() => {
-            setIsEmailSent(false);
-            window.close(); // Schließt das Fenster
-          }, 4000); // Schließt das Fenster nach 4 Sekunden
         },
         (error) => {
           console.log(error.text);

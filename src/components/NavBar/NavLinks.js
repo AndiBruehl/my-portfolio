@@ -41,7 +41,7 @@ const NavLinks = (props) => {
       <motion.li
         initial={animateFrom}
         animate={animateTo}
-        transition={{ delay: 0.20 }}
+        transition={{ delay: 0.15 }}
         onClick={() => handleLinkClick('Skills')}
         whileHover={{ scale: 1.3 }}
         whileTap={{ scale: 1.2 }}
@@ -63,7 +63,7 @@ const NavLinks = (props) => {
       <motion.li
         initial={animateFrom}
         animate={animateTo}
-        transition={{ delay: 0.20 }}
+        transition={{ delay: 0.25 }}
         onClick={() => handleLinkClick('Links')}
         whileHover={{ scale: 1.3 }}
         whileTap={{ scale: 1.2 }}
@@ -85,7 +85,7 @@ const NavLinks = (props) => {
       <motion.li
         initial={animateFrom}
         animate={animateTo}
-        transition={{ delay: 0.40 }}
+        transition={{ delay: 0.35 }}
         onClick={() => handleLinkClick('Downloads')}
         whileHover={{ scale: 1.3 }}
         whileTap={{ scale: 1.2 }}
@@ -96,7 +96,7 @@ const NavLinks = (props) => {
       <motion.li
         initial={animateFrom}
         animate={animateTo}
-        transition={{ delay: 0.50 }}
+        transition={{ delay: 0.40 }}
         onClick={() => handleLinkClick('Contact')}
         whileHover={{ scale: 1.3 }}
         whileTap={{ scale: 1.2 }}

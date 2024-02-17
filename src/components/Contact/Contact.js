@@ -1,11 +1,34 @@
-import React, { useState } from 'react';
+// Contact.js
+
+import React from 'react';
+import ReactDOM from 'react-dom';
 import classes from './Contact.module.css';
-import { FaMailBulk, FaYoutube, FaGithub, FaLinkedin, FaTwitch } from 'react-icons/fa';
-// import {FaEnvelope } from 'react-icons/fa';
+import { FaMailBulk, FaYoutube, FaGithub, FaLinkedin, FaTwitch, FaEnvelope } from 'react-icons/fa';
 import credly_white from "../../assets/credly_white.png";
-// import ContactForm from './ContactForm'; // Import the ContactForm component
+import ContactForm from './ContactForm';
 
 const Contacts = () => {
+
+  const openContactForm = () => {
+    // Berechnen der Position des Fensters, um es zentriert zu platzieren
+    const screenWidth = window.screen.width;
+    const screenHeight = window.screen.height;
+    const windowWidth = 640; // Die Breite des neuen Fensters
+    const windowHeight = 480; // Die Höhe des neuen Fensters
+    const left = (screenWidth - windowWidth) / 2;
+    const top = (screenHeight - windowHeight) / 2;
+  
+    // Öffnen des neuen Fensters und Zentrieren
+    const ContactFormWindow = window.open("", "_blank", `width=${windowWidth},height=${windowHeight},left=${left},top=${top}`);
+    ContactFormWindow.document.write("<html><head><title>Kontakt</title></head><body>");
+    ContactFormWindow.document.write("<div id='ContactForm'></div>");
+    ContactFormWindow.document.write("</body></html>");
+  
+    // Rendern des ContactForm in das neue Fenster
+    ReactDOM.render(<ContactForm />, ContactFormWindow.document.getElementById("ContactForm"));
+  };
+  
+
   // Get the current year for the copyright notice
   const currentYear = new Date().getFullYear();
 
@@ -45,14 +68,7 @@ const Contacts = () => {
     width: '6vw', // Adjust the width for the Credly icon
   };
 
-  const containerStyle = {
-    textAlign: "center", // Center all content horizontally
-  };
-
-  // State to control whether to show the email form
-  const [showEmailForm, setShowEmailForm] = useState(false);
-
-  return (
+   return (
     <div className={classes.Contact} id="contact">
       <div className={classes.ContactIcons}>
         <div className="footer-icons">
@@ -74,20 +90,18 @@ const Contacts = () => {
           <a href="https://www.twitch.tv/tigersoul89" target="_blank">
             <FaTwitch style={youtubeIconStyle} />
           </a>
-          {/* <a href="#" onClick={() => setShowEmailForm(!showEmailForm)}>
+          <a href="" onClick={e => { e.preventDefault(); openContactForm(); }}> 
             <FaEnvelope style={messageIconStyle} />
-          </a> */}
+          </a>
         </div>
       </div>
 
-      {/* Conditionally render the ContactForm */}
-      {/* {showEmailForm && <ContactForm />} */}
-
-      <p className={classes.Copyright} style={{ clear: 'both' }}>
+      <p className={classes.FooterText}>
         &copy; {currentYear} A. Brühl - All rights reserved
       </p>
     </div>
   );
 };
+
 
 export default Contacts;
