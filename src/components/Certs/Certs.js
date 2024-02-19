@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from 'styled-components';
-
 import PageHeader from '../PageHeader/PageHeader';
 
 import slide_image_1 from './assets/images/image1.png';
@@ -24,6 +23,7 @@ import slide_image_18 from './assets/images/image18.png';
 import slide_image_19 from './assets/images/image19.png';
 import slide_image_20 from './assets/images/image20.png';
 import slide_image_21 from './assets/images/image21.png';
+import slide_image_22 from './assets/images/image22.png';
 
 const CertsContainer = styled.div`
   display: grid;
@@ -84,6 +84,14 @@ const ModalImage = styled.img`
   max-height: 900px;
 `;
 
+const images = [
+  slide_image_1, slide_image_2, slide_image_3, slide_image_4, slide_image_5,
+  slide_image_6, slide_image_7, slide_image_8, slide_image_9, slide_image_10,
+  slide_image_11, slide_image_12, slide_image_13, slide_image_14, slide_image_15,
+  slide_image_16, slide_image_17, slide_image_18, slide_image_19, slide_image_20,
+  slide_image_21, slide_image_22
+];
+
 const Certs = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
@@ -104,27 +112,9 @@ const Certs = () => {
         <PageHeader title={'Certificates'} />
         <Header>Meine aktuellen Zertifikate</Header>
         <CertsContainer>
-          <RoundedImage src={slide_image_1} alt="slide_image_1" onClick={() => openModal(slide_image_1)} />
-          <RoundedImage src={slide_image_2} alt="slide_image_2" onClick={() => openModal(slide_image_2)} />
-          <RoundedImage src={slide_image_3} alt="slide_image_3" onClick={() => openModal(slide_image_3)} />
-          <RoundedImage src={slide_image_4} alt="slide_image_4" onClick={() => openModal(slide_image_4)} />
-          <RoundedImage src={slide_image_5} alt="slide_image_5" onClick={() => openModal(slide_image_5)} />
-          <RoundedImage src={slide_image_6} alt="slide_image_6" onClick={() => openModal(slide_image_6)} />
-          <RoundedImage src={slide_image_7} alt="slide_image_7" onClick={() => openModal(slide_image_7)} />
-          <RoundedImage src={slide_image_8} alt="slide_image_8" onClick={() => openModal(slide_image_8)} />
-          <RoundedImage src={slide_image_9} alt="slide_image_9" onClick={() => openModal(slide_image_9)} />
-          <RoundedImage src={slide_image_10} alt="slide_image_10" onClick={() => openModal(slide_image_10)} />
-          <RoundedImage src={slide_image_11} alt="slide_image_11" onClick={() => openModal(slide_image_11)} />
-          <RoundedImage src={slide_image_12} alt="slide_image_12" onClick={() => openModal(slide_image_12)} />
-          <RoundedImage src={slide_image_13} alt="slide_image_13" onClick={() => openModal(slide_image_13)} />
-          <RoundedImage src={slide_image_14} alt="slide_image_14" onClick={() => openModal(slide_image_14)} />
-          <RoundedImage src={slide_image_15} alt="slide_image_15" onClick={() => openModal(slide_image_15)} />
-          <RoundedImage src={slide_image_16} alt="slide_image_16" onClick={() => openModal(slide_image_16)} />
-          <RoundedImage src={slide_image_17} alt="slide_image_17" onClick={() => openModal(slide_image_17)} />
-          <RoundedImage src={slide_image_18} alt="slide_image_18" onClick={() => openModal(slide_image_18)} />
-          <RoundedImage src={slide_image_19} alt="slide_image_19" onClick={() => openModal(slide_image_19)} />
-          <RoundedImage src={slide_image_20} alt="slide_image_20" onClick={() => openModal(slide_image_20)} />
-          <RoundedImage src={slide_image_21} alt="slide_image_21" onClick={() => openModal(slide_image_21)} />
+          {images.map((image, index) => (
+            <RoundedImage key={index} src={image} alt={`slide_image_${index + 1}`} onClick={() => openModal(image)} />
+          ))}
         </CertsContainer>
         {modalOpen && (
           <ModalBackground onClick={closeModal}>
