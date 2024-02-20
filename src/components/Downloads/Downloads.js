@@ -87,7 +87,7 @@ const Downloads = () => {
         event.preventDefault(); // Verhindere die Standardaktion des Links
 
         // Erstelle einen Link zur PDF-Datei (direkter Dateiname)
-        const pdfLink = 'https://drive.google.com/file/d/1YSjz3EMQojgNxVdR9Ke6sux2-1P-APEx/view?usp=drive_link';
+        const pdfLink = 'https://drive.google.com/file/d/1jhUN96Mh4Rdd7nhLoPffkPsjb5v_wb9S/view?usp=drive_link';
 
         // Erstelle ein unsichtbares a-Element
         const a = document.createElement('a');
@@ -150,7 +150,7 @@ const Downloads = () => {
         event.preventDefault(); // Verhindere die Standardaktion des Links
 
         // Erstelle einen Link zur PDF-Datei (direkter Dateiname)
-        const quizAppLink = 'https://drive.google.com/file/d/1jhUN96Mh4Rdd7nhLoPffkPsjb5v_wb9S/view?usp=drive_link';
+        const quizAppLink = 'https://drive.google.com/file/d/1K6hYlbgT_Scj-efPbfabPHF0ike8rPm9/view?usp=drive_link';
 
         // Erstelle ein unsichtbares a-Element
         const a = document.createElement('a');
