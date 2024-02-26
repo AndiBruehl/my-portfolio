@@ -87,7 +87,7 @@ const Downloads = () => {
         event.preventDefault(); // Verhindere die Standardaktion des Links
 
         // Erstelle einen Link zur PDF-Datei (direkter Dateiname)
-        const pdfLink = 'https://drive.google.com/file/d/1TQysJ59NzXlcxAOieOVQ2I8G3Ee2ts-G/view?usp=drive_link';
+        const pdfLink = 'https://drive.google.com/file/d/1kwRnfytrAj3bk05b9fMaW2tVjTfHsPYh/view?usp=drive_link';
 
         // Erstelle ein unsichtbares a-Element
         const a = document.createElement('a');
