@@ -146,6 +146,12 @@ const Links = () => {
                                         LieferMax - Dein LieferService!</a>
                                 </p>
 
+                                <p style={paragraphStyles}>
+                                    <a href="https://achat.vercel.app/" target='_blank'>
+                                        <img src="https://www.svgrepo.com/show/412082/stream.svg" width="20px" height="20px" alt="bookiesList" style={svgStyles} />
+                                        ACHAT</a>
+                                </p>
+
                             </div>
                         </div>
                     </div>

@@ -19,10 +19,6 @@ const ContactForm = () => {
         (result) => {
           console.log(result.text);
           setIsEmailSent(true);
-          setTimeout(() => {
-            setIsEmailSent(false);
-            window.close(); // Schließt das Fenster
-          }, 4000); // Schließt das Fenster nach 4 Sekunden
         },
         (error) => {
           console.log(error.text);
@@ -37,27 +33,36 @@ const ContactForm = () => {
   };
 
   return (
-    <div
+    <motion.div // Wrap the form in a motion.div component
       style={{
         backgroundColor: "#141313",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100%",
       }}
+      initial={{ opacity: 0 }} // Initial opacity set to 0
+      animate={{ opacity: 1 }} // Animate opacity to 1
+      exit={{ opacity: 0 }} // Animate opacity to 0 when form is closed
     >
       <form
         style={{
           display: "flex",
-          alignItems: "center",
           flexDirection: "column",
           color: "white",
           fontSize: "medium",
-          width: "95vw",
-          height: "94vh",
+          maxWidth: "100%",
+          padding: "4rem",
+          paddingTop: "0.01rem",
+          borderRadius: "10px",
+          // boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.2)",
         }}
         onSubmit={sendEmail}
       >
         <h2>Deine Mitteilung an mich!</h2>
 
-        <div style={{ width: "75vw" }}>
-          <label> Email </label>
+        <div style={{ marginBottom: "1rem" }}>
+          <label>Email</label>
           <br />
           <input
             type="email"
@@ -65,18 +70,15 @@ const ContactForm = () => {
             required
             style={{
               width: "100%",
-              border: "none",
               borderRadius: "10px",
-              padding: "2vw",
-              height: "5vh",
-              margin: "2% 0",
+              padding: "1rem",
+              marginBottom: "0.5rem",
             }}
           />
-          <br />
         </div>
 
-        <div style={{ width: "75vw" }}>
-          <label> Name </label>
+        <div style={{ marginBottom: "1rem" }}>
+          <label>Name</label>
           <br />
           <input
             type="text"
@@ -84,17 +86,15 @@ const ContactForm = () => {
             required
             style={{
               width: "100%",
-              border: "none",
               borderRadius: "10px",
-              padding: "2vw",
-              height: "5vh",
-              margin: "2% 0",
+              padding: "1rem",
+              marginBottom: "0.5rem",
             }}
           />
         </div>
 
-        <div style={{ width: "75vw" }}>
-          <label> Betreff </label>
+        <div style={{ marginBottom: "1rem" }}>
+          <label>Betreff</label>
           <br />
           <input
             type="text"
@@ -102,33 +102,29 @@ const ContactForm = () => {
             required
             style={{
               width: "100%",
-              border: "none",
               borderRadius: "10px",
-              padding: "2vw",
-              height: "5vh",
-              margin: "2% 0",
+              padding: "1rem",
+              marginBottom: "0.5rem",
             }}
           />
         </div>
 
-        <div style={{ width: "75vw" }}>
-          <label> Message </label>
+        <div style={{ marginBottom: "1rem" }}>
+          <label>Message</label>
           <br />
           <textarea
             name="message"
             required
             style={{
               width: "100%",
-              border: "none",
               borderRadius: "10px",
-              padding: "2vw",
-              height: "10vh",
-              margin: "2% 0",
+              padding: "1rem",
+              marginBottom: "0.5rem",
             }}
           />
-          <br />
         </div>
-        <div>
+
+        <div style={{ display: "flex", justifyContent: "center" }}>
           <input
             type="submit"
             value="Abschicken"
@@ -137,12 +133,33 @@ const ContactForm = () => {
               color: "white",
               margin: "0.5vh",
               padding: "1vh",
-              borderRadius: "10%",
-              WebkitBoxShadow: "3px 4px 5px 2px rgba(0, 0, 0, 0.24)",
+              borderRadius: "10px",
               boxShadow: "3px 4px 5px 2px rgba(0, 0, 0, 0.24)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              border: "none", // Remove border
+              outline: "none", // Remove outline
+              position: "relative", // Position for pseudo-elements
+              overflow: "hidden", // Hide overflow for pseudo-elements
+              transition: "box-shadow 0.3s ease", // Smooth transition for box-shadow changes
+            }}
+            // CSS-Pseudoklassen für hover und active
+            onMouseOver={(e) => {
+              e.target.style.boxShadow = "0 0 30px blue"; // Blaues Leuchten beim Hover
+            }}
+            onMouseOut={(e) => {
+              e.target.style.boxShadow = "3px 4px 5px 2px rgba(0, 0, 0, 0.24)"; // Standard-Schatten
+            }}
+            onMouseDown={(e) => {
+              e.target.style.boxShadow = "0 0 30px green"; // Grünes Leuchten beim Klicken
+            }}
+            onMouseUp={(e) => {
+              e.target.style.boxShadow = "0 0 30px blue"; // Blaues Leuchten beim Loslassen der Maus
             }}
           />
         </div>
+
         <AnimatePresence>
           {isEmailSent && (
             <motion.p
@@ -152,13 +169,19 @@ const ContactForm = () => {
               exit="hidden"
               variants={fadeInOut}
               transition={{ duration: 2 }}
+              // style={{ marginTop: "1rem" }}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
             >
               Nachricht erfolgreich gesendet!
             </motion.p>
           )}
         </AnimatePresence>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

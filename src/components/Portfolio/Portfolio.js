@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import styled from 'styled-components';
@@ -22,6 +23,7 @@ import slide_image_6 from './assets/images/image6.png';
 import slide_image_7 from './assets/images/image7.png';
 import slide_image_8 from './assets/images/image8.png';
 import slide_image_9 from './assets/images/image9.png';
+import slide_image_10 from './assets/images/image10.png';
 
 const Header = styled.h2`
     text-align: center;
@@ -99,6 +101,10 @@ const Portfolio = () => {
                         <img src={slide_image_9} alt="slide_image_9" />
                         <p style={{ textAlign: 'center' }}>Aktien-App mit Electron</p>
                     </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide_image_10} alt="slide_image_10" />
+                        <p style={{ textAlign: 'center' }}>ACHAT</p>
+                    </SwiperSlide>
 
                     <div className="slider-controller">
                         <div className="swiper-button-prev slider-arrow">
@@ -121,3 +127,5 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+
