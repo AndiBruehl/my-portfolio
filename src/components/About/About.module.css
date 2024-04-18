@@ -1,49 +1,63 @@
 .AboutMe {
-    background: black;
-    color: white;
-    padding-bottom: 5%;
+  background: black;
+  color: white;
+  padding-bottom: 5%;
 }
 
 .AboutMe .Container {
-    display: flex;
+  display: flex;
 }
 
 .AboutMe .Container .Text {
-    width: 47%;
-    margin-left: 3%;
+  width: 47%;
+  margin-left: 3%;
 }
 
 .AboutMe .Container .Text h2 {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .AboutMe .Container .Photo {
-    display: flex;
-    width: 50%;
-    height: 50%;
-    margin-top: 10vh;
-    justify-content: center;
-
+  display: flex;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 10vh;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 .AboutMe .Container .Photo .Me {
-    width: 40%;
-    max-width: 500px;
-    border-radius: 10%;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  position: relative;
+}
+
+.AboutMe .Container .Photo::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #8c1cd1;
+  position: absolute;
+  border-radius: 50%;
+  top: -0.75rem;
+  right: -0.75rem;
 }
 
 @media (max-width: 500px) {
-    .AboutMe .Container
-    {
-        flex-direction: column;
-        align-items: center;
-    }
-    .AboutMe .Container .Text
-    {
-        width: 80%;
-    }
-    .AboutMe .Container .Photo
-    {
-        width: 70%;
-    }
+  .AboutMe .Container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .AboutMe .Container .Text {
+    width: 80%;
+  }
+  .AboutMe .Container .Photo {
+    width: 70%;
+  }
 }
