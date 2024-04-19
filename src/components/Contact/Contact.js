@@ -11,10 +11,9 @@ import { GrContact } from "react-icons/gr";
 import credly_white from "../../assets/credly_white.png";
 import ContactModal from "./ContactModal";
 import { motion } from "framer-motion"; // Import Framer Motion
-import VisitCounter from "../VisitCounter/VisitCounter";
+// import VisitCounter from "../VisitCounter/VisitCounter";
 
 const Contacts = () => {
-  const trackingID = "G-N12S56676D";
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openContactForm = (e) => {
@@ -98,7 +97,7 @@ const Contacts = () => {
         </div>
       </div>
 
-      <VisitCounter trackingID={trackingID} />
+      {/* <VisitCounter measurementID="G-N12S56676D" /> */}
 
       <p className={classes.FooterText}>
         &copy; {currentYear} A. Brühl - All rights reserved
