@@ -81,7 +81,7 @@ const Links = () => {
                       src="https://www.svgrepo.com/show/512317/github-142.svg"
                       width="20px"
                       height="20px"
-                      alt="Quizapp"
+                      alt="Github"
                       style={svgStyles}
                     />
                     GitHub
