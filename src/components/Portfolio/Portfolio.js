@@ -21,6 +21,7 @@ import slide_image_8 from "./assets/images/image8.png";
 import slide_image_9 from "./assets/images/image9.png";
 import slide_image_10 from "./assets/images/image10.png";
 import slide_image_11 from "./assets/images/image11.png";
+import slide_image_12 from "./assets/images/image12.png";
 
 const Header = styled.h2`
   text-align: center;
@@ -40,7 +41,7 @@ const ModalBackground = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Setze den z-index auf einen Wert, der höher ist als der des Swipers */
+  z-index: 9999;
 `;
 
 const ModalContent = styled.div`
@@ -141,13 +142,17 @@ const Portfolio = () => {
             <img src={slide_image_11} alt="slide_image_11" />
             <p style={{ textAlign: "center" }}>Farbgenerator</p>
           </SwiperSlide>
+          <SwiperSlide onClick={() => openModal(slide_image_12)}>
+            <img src={slide_image_12} alt="slide_image_12" />
+            <p style={{ textAlign: "center" }}>JobStar</p>
+          </SwiperSlide>
 
           <div className="slider-controller">
             <div className="swiper-button-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
+              <ion-icon name="arrow-back">Zurück</ion-icon>
             </div>
             <div className="swiper-button-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
+              <ion-icon name="arrow-forward">Vor</ion-icon>
             </div>
             <div className="swiper-pagination"></div>
           </div>

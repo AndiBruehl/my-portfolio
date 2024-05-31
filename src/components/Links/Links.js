@@ -83,7 +83,7 @@ const Links = () => {
                       height="20px"
                       alt="Github"
                       style={svgStyles}
-                    />
+                    />{" "}
                     GitHub
                   </a>
                 </p>
@@ -99,7 +99,7 @@ const Links = () => {
                       height="20px"
                       alt="JavaScript-Games"
                       style={svgStyles}
-                    />
+                    />{" "}
                     JavaScriptGames
                   </a>
                 </p>
@@ -115,7 +115,7 @@ const Links = () => {
                       height="20px"
                       alt="Quizapp"
                       style={svgStyles}
-                    />
+                    />{" "}
                     QuizTopia
                   </a>
                 </p>
@@ -131,7 +131,7 @@ const Links = () => {
                       height="20px"
                       alt="WeatherNow"
                       style={svgStyles}
-                    />
+                    />{" "}
                     WeatherNow
                   </a>
                 </p>
@@ -147,7 +147,7 @@ const Links = () => {
                       height="20px"
                       alt="WeatherNow"
                       style={svgStyles}
-                    />
+                    />{" "}
                     WeatherNow - Alternative Landingpage{" "}
                     <a href="https://github.com/bastiwho" target="_blank">
                       (made by @BastiWho)
@@ -166,7 +166,7 @@ const Links = () => {
                       height="20px"
                       alt="Samurai"
                       style={svgStyles}
-                    />
+                    />{" "}
                     Fighting-Samurai
                   </a>
                 </p>
@@ -182,7 +182,7 @@ const Links = () => {
                       height="20px"
                       alt="Pokeball"
                       style={svgStyles}
-                    />
+                    />{" "}
                     PokemonStyle-Game
                   </a>
                 </p>
@@ -198,7 +198,7 @@ const Links = () => {
                       height="20px"
                       alt="bookiesList"
                       style={svgStyles}
-                    />
+                    />{" "}
                     bookiesList-Website
                   </a>
                 </p>
@@ -211,7 +211,7 @@ const Links = () => {
                       height="20px"
                       alt="bookiesList"
                       style={svgStyles}
-                    />
+                    />{" "}
                     LieferMax - Dein LieferService!
                   </a>
                 </p>
@@ -224,7 +224,7 @@ const Links = () => {
                       height="20px"
                       alt="bookiesList"
                       style={svgStyles}
-                    />
+                    />{" "}
                     ACHAT
                   </a>
                 </p>
@@ -237,8 +237,21 @@ const Links = () => {
                       height="20px"
                       alt="farbgenerator"
                       style={svgStyles}
-                    />
+                    />{" "}
                     Farbgenerator
+                  </a>
+                </p>
+
+                <p style={paragraphStyles}>
+                  <a href="https://job-star.vercel.app/landing" target="_blank">
+                    <img
+                      src="https://www.svgrepo.com/show/138396/job-post.svg"
+                      width="20px"
+                      height="20px"
+                      alt="jobstar"
+                      style={svgStyles}
+                    />{" "}
+                    JobStar - Bewerbungen verwalten einfach gemacht!
                   </a>
                 </p>
               </div>
