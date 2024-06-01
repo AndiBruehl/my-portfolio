@@ -254,6 +254,21 @@ const Links = () => {
                     JobStar - Bewerbungen verwalten einfach gemacht!
                   </a>
                 </p>
+                <p style={paragraphStyles}>
+                  <a
+                    href="https://search4githubusers.netlify.app/"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://www.svgrepo.com/show/506654/github.svg"
+                      width="20px"
+                      height="20px"
+                      alt="jobstar"
+                      style={svgStyles}
+                    />{" "}
+                    Search4GithubUsers - Github User übersichtlich dargestellt.
+                  </a>
+                </p>
               </div>
             </div>
           </div>

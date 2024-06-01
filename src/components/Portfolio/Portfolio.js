@@ -22,6 +22,7 @@ import slide_image_9 from "./assets/images/image9.png";
 import slide_image_10 from "./assets/images/image10.png";
 import slide_image_11 from "./assets/images/image11.png";
 import slide_image_12 from "./assets/images/image12.png";
+import slide_image_13 from "./assets/images/image13.png";
 
 const Header = styled.h2`
   text-align: center;
@@ -146,6 +147,10 @@ const Portfolio = () => {
             <img src={slide_image_12} alt="slide_image_12" />
             <p style={{ textAlign: "center" }}>JobStar</p>
           </SwiperSlide>
+          <SwiperSlide onClick={() => openModal(slide_image_13)}>
+            <img src={slide_image_13} alt="slide_image_13" />
+            <p style={{ textAlign: "center" }}>Search4GithubUsers</p>
+          </SwiperSlide>
 
           <div className="slider-controller">
             <div className="swiper-button-prev slider-arrow">
@@ -157,6 +162,7 @@ const Portfolio = () => {
             <div className="swiper-pagination"></div>
           </div>
         </Swiper>
+
         {modalOpen && (
           <ModalBackground onClick={closeModal}>
             <ModalContent>
