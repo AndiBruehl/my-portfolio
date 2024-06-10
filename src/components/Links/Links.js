@@ -91,7 +91,6 @@ const Links = () => {
                     GitHub
                   </a>
                 </p>
-
                 <p style={paragraphStyles}>
                   <a
                     href="https://andibruehl.github.io/JavaScriptGames/Spielstart.html"
@@ -108,7 +107,6 @@ const Links = () => {
                     JavaScriptGames
                   </a>
                 </p>
-
                 <p style={paragraphStyles}>
                   <a
                     href="https://andibruehl.github.io/Quiztopia"
@@ -125,7 +123,6 @@ const Links = () => {
                     QuizTopia
                   </a>
                 </p>
-
                 <p style={paragraphStyles}>
                   <a
                     href="https://andibruehl.github.io/WeatherNow/"
@@ -142,7 +139,6 @@ const Links = () => {
                     WeatherNow
                   </a>
                 </p>
-
                 <p style={paragraphStyles}>
                   <a
                     href="https://bastiwho.github.io/WeatherNow/"
@@ -166,7 +162,6 @@ const Links = () => {
                     </a>
                   </a>
                 </p>
-
                 <p style={paragraphStyles}>
                   <a
                     href="https://fightingsamurais.netlify.app/"
@@ -183,7 +178,6 @@ const Links = () => {
                     Fighting-Samurai
                   </a>
                 </p>
-
                 <p style={paragraphStyles}>
                   <a
                     href="https://pokemonlikestyledgame.netlify.app/"
@@ -200,7 +194,6 @@ const Links = () => {
                     PokemonStyle-Game
                   </a>
                 </p>
-
                 <p style={paragraphStyles}>
                   <a
                     href="https://bookieslist.github.io/bookieslist/"
@@ -217,7 +210,6 @@ const Links = () => {
                     bookiesList-Website
                   </a>
                 </p>
-
                 <p style={paragraphStyles}>
                   <a
                     href="https://liefermax-mu.vercel.app/"
@@ -234,7 +226,6 @@ const Links = () => {
                     LieferMax - Dein LieferService!
                   </a>
                 </p>
-
                 <p style={paragraphStyles}>
                   <a
                     href="https://achat.vercel.app/"
@@ -251,7 +242,6 @@ const Links = () => {
                     ACHAT
                   </a>
                 </p>
-
                 <p style={paragraphStyles}>
                   <a
                     href="https://farbgenerator.netlify.app/"
@@ -268,7 +258,6 @@ const Links = () => {
                     Farbgenerator
                   </a>
                 </p>
-
                 <p style={paragraphStyles}>
                   <a
                     href="https://job-star.vercel.app/landing"
@@ -299,6 +288,23 @@ const Links = () => {
                       style={svgStyles}
                     />{" "}
                     Search4GithubUsers - Github User übersichtlich dargestellt.
+                  </a>
+                </p>{" "}
+                <p style={paragraphStyles}>
+                  <a
+                    href="https://comfysloth-demo.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://www.svgrepo.com/show/176721/sloth-animal.svg"
+                      width="20px"
+                      height="20px"
+                      alt="jobstar"
+                      style={svgStyles}
+                    />
+                    {"  "}
+                    ComfySloth-Demo... Prototyp einer E-Commerce-Website
                   </a>
                 </p>
               </div>
