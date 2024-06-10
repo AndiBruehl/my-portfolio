@@ -61,10 +61,10 @@ const Links = () => {
     textDecoration: "none",
   };
 
-  const linkStyles = {
-    color: "white",
-    textDecoration: "none", // Keine Unterstreichung
-  };
+  // const linkStyles = {
+  //   color: "white",
+  //   textDecoration: "none", // Keine Unterstreichung
+  // };
 
   return (
     <div className={classes.Links} id="links">
@@ -76,7 +76,11 @@ const Links = () => {
               <div style={textContainerStyles}>
                 <br></br>
                 <p style={paragraphStyles}>
-                  <a href="https://github.com/AndiBruehl" target="_blank">
+                  <a
+                    href="https://github.com/AndiBruehl"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       src="https://www.svgrepo.com/show/512317/github-142.svg"
                       width="20px"
@@ -92,6 +96,7 @@ const Links = () => {
                   <a
                     href="https://andibruehl.github.io/JavaScriptGames/Spielstart.html"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img
                       src="https://www.svgrepo.com/show/452875/bird.svg"
@@ -108,6 +113,7 @@ const Links = () => {
                   <a
                     href="https://andibruehl.github.io/Quiztopia"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img
                       src="https://www.svgrepo.com/show/509211/question.svg"
@@ -124,6 +130,7 @@ const Links = () => {
                   <a
                     href="https://andibruehl.github.io/WeatherNow/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img
                       src="https://www.svgrepo.com/show/494028/weather-2.svg"
@@ -140,6 +147,7 @@ const Links = () => {
                   <a
                     href="https://bastiwho.github.io/WeatherNow/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img
                       src="https://www.svgrepo.com/show/494028/weather-2.svg"
@@ -149,7 +157,11 @@ const Links = () => {
                       style={svgStyles}
                     />{" "}
                     WeatherNow - Alternative Landingpage{" "}
-                    <a href="https://github.com/bastiwho" target="_blank">
+                    <a
+                      href="https://github.com/bastiwho"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       (made by @BastiWho)
                     </a>
                   </a>
@@ -159,6 +171,7 @@ const Links = () => {
                   <a
                     href="https://fightingsamurais.netlify.app/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img
                       src="https://www.svgrepo.com/show/483746/samurai.svg"
@@ -175,6 +188,7 @@ const Links = () => {
                   <a
                     href="https://pokemonlikestyledgame.netlify.app/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img
                       src="https://www.svgrepo.com/show/54691/pokemon.svg"
@@ -191,6 +205,7 @@ const Links = () => {
                   <a
                     href="https://bookieslist.github.io/bookieslist/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img
                       src="https://www.svgrepo.com/show/533406/book.svg"
@@ -204,7 +219,11 @@ const Links = () => {
                 </p>
 
                 <p style={paragraphStyles}>
-                  <a href="https://liefermax-mu.vercel.app/" target="_blank">
+                  <a
+                    href="https://liefermax-mu.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       src="https://www.svgrepo.com/show/482679/cook-hat.svg"
                       width="20px"
@@ -217,7 +236,11 @@ const Links = () => {
                 </p>
 
                 <p style={paragraphStyles}>
-                  <a href="https://achat.vercel.app/" target="_blank">
+                  <a
+                    href="https://achat.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       src="https://www.svgrepo.com/show/412082/stream.svg"
                       width="20px"
@@ -230,7 +253,11 @@ const Links = () => {
                 </p>
 
                 <p style={paragraphStyles}>
-                  <a href="https://farbgenerator.netlify.app/" target="_blank">
+                  <a
+                    href="https://farbgenerator.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       src="https://www.svgrepo.com/show/497798/brush-1.svg"
                       width="20px"
@@ -243,7 +270,11 @@ const Links = () => {
                 </p>
 
                 <p style={paragraphStyles}>
-                  <a href="https://job-star.vercel.app/landing" target="_blank">
+                  <a
+                    href="https://job-star.vercel.app/landing"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       src="https://www.svgrepo.com/show/138396/job-post.svg"
                       width="20px"
@@ -258,6 +289,7 @@ const Links = () => {
                   <a
                     href="https://search4githubusers.netlify.app/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img
                       src="https://www.svgrepo.com/show/506654/github.svg"

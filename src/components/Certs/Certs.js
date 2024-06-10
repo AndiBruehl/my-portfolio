@@ -68,34 +68,6 @@ const ModalImage = styled.img`
   max-height: 900px;
 `;
 
-//   slide_image_1,
-//   slide_image_2,
-//   slide_image_3,
-//   slide_image_4,
-//   slide_image_5,
-//   slide_image_6,
-
-//   slide_image_10,
-//   slide_image_11,
-//   slide_image_12,
-//   slide_image_13,
-//   slide_image_14,
-//   slide_image_15,
-//   slide_image_21,
-//   slide_image_17,
-//   slide_image_16,
-//   slide_image_20,
-//   slide_image_18,
-//   slide_image_22,
-//   slide_image_19,
-//   slide_image_7,
-//   slide_image_8,
-//   slide_image_9,
-//   slide_image_23,
-//   slide_image_24,
-//   slide_image_25,
-// ];
-
 const Certs = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");

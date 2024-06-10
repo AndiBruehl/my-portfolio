@@ -23,6 +23,7 @@ import slide_image_22 from "./assets/images/image22.png";
 import slide_image_23 from "./assets/images/image23.png";
 import slide_image_24 from "./assets/images/image24.png";
 import slide_image_25 from "./assets/images/image25.png";
+import slide_image_26 from "./assets/images/image26.png";
 
 const images = [
   slide_image_1,
@@ -37,19 +38,20 @@ const images = [
   slide_image_13,
   slide_image_14,
   slide_image_15,
+  slide_image_16,
   slide_image_21,
   slide_image_17,
-  slide_image_16,
   slide_image_20,
   slide_image_18,
   slide_image_22,
   slide_image_19,
+  slide_image_23,
   slide_image_7,
   slide_image_8,
   slide_image_9,
-  slide_image_23,
   slide_image_24,
   slide_image_25,
+  slide_image_26,
 ];
 
 export default images;
