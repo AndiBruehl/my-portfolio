@@ -10,14 +10,17 @@ import {
 import { GrContact } from "react-icons/gr";
 import credly_white from "../../assets/credly_white.png";
 import ContactModal from "./ContactModal";
-import { motion } from "framer-motion"; // Import Framer Motion
-// import VisitCounter from "../VisitCounter/VisitCounter";
+import { motion } from "framer-motion";
+
+const svgStyles = {
+  filter: "invert(1)", // Invert the colors of the SVG
+};
 
 const Contacts = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openContactForm = (e) => {
-    e.preventDefault(); // Prevents the default behavior of navigating to a new page
+    e.preventDefault();
     setIsModalOpen(true);
   };
 
@@ -30,25 +33,25 @@ const Contacts = () => {
   const iconStyle = {
     margin: "1vw",
     marginTop: "1vh",
-    fontSize: "3vw", // Adjust the font size for the icons
+    fontSize: "3vw",
   };
 
   const credlyIconStyle = {
     margin: "1vw",
     marginTop: "1vh",
-    width: "6vw", // Adjust the width for the Credly icon
+    width: "6vw",
   };
 
   return (
     <motion.div
       className={classes.Contact}
       id="contact"
-      initial={{ opacity: 0 }} // Initial opacity set to 0
-      animate={{ opacity: 1 }} // Animate opacity to 1
-      exit={{ opacity: 0 }} // Animate opacity to 0 when modal is closed
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     >
       <div className={classes.ContactIcons}>
-        <div className="footer-icons">
+        <div className={classes.footerIcons}>
           <a
             href="https://github.com/AndiBruehl"
             target="_blank"
@@ -96,13 +99,32 @@ const Contacts = () => {
           </a>
         </div>
       </div>
-
-      {/* <VisitCounter measurementID="G-N12S56676D" /> */}
-
+      <br />
+      <div
+        style={{
+          marginTop: "-25px",
+          width: "100vw",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <a
+          href="https://shop.tredition.com/author/michael-jeremy-hard"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="https://shop.tredition.com/img/tredition_SHOP_Logo.svg"
+            height="30vw"
+            alt="tredition"
+            style={svgStyles}
+          />
+        </a>
+      </div>
       <p className={classes.FooterText}>
         &copy; {currentYear} A. Brühl - All rights reserved
       </p>
-
       {isModalOpen && <ContactModal onClose={closeModal} />}
     </motion.div>
   );
