@@ -1,3 +1,5 @@
+// src/components/Portfolio/Portfolio.js
+
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styled from "styled-components";
@@ -9,20 +11,7 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 import PageHeader from "../PageHeader/PageHeader";
 import "./Portfolio.css";
-
-import slide_image_1 from "./assets/images/image1.png";
-import slide_image_2 from "./assets/images/image2.png";
-import slide_image_3 from "./assets/images/image3.png";
-import slide_image_4 from "./assets/images/image4.png";
-import slide_image_5 from "./assets/images/image5.png";
-import slide_image_6 from "./assets/images/image6.png";
-import slide_image_7 from "./assets/images/image7.png";
-import slide_image_8 from "./assets/images/image8.png";
-import slide_image_9 from "./assets/images/image9.png";
-import slide_image_10 from "./assets/images/image10.png";
-import slide_image_11 from "./assets/images/image11.png";
-import slide_image_12 from "./assets/images/image12.png";
-import slide_image_13 from "./assets/images/image13.png";
+import portfolioImages from "./PortfolioImages"; // Import the portfolio images data
 
 const Header = styled.h2`
   text-align: center;
@@ -96,61 +85,17 @@ const Portfolio = () => {
           modules={[EffectCoverflow, Pagination, Navigation]}
           className="swiper_container"
         >
-          <SwiperSlide onClick={() => openModal(slide_image_1)}>
-            <img src={slide_image_1} alt="slide_image_1" />
-            <p style={{ textAlign: "center" }}>Sample Code in VSCode</p>
-          </SwiperSlide>
-          <SwiperSlide onClick={() => openModal(slide_image_2)}>
-            <img src={slide_image_2} alt="slide_image_2" />
-            <p style={{ textAlign: "center" }}>JavaScriptGames</p>
-          </SwiperSlide>
-          <SwiperSlide onClick={() => openModal(slide_image_3)}>
-            <img src={slide_image_3} alt="slide_image_3" />
-            <p style={{ textAlign: "center" }}>QuizTopia</p>
-          </SwiperSlide>
-          <SwiperSlide onClick={() => openModal(slide_image_4)}>
-            <img src={slide_image_4} alt="slide_image_4" />
-            <p style={{ textAlign: "center" }}>WeatherNow</p>
-          </SwiperSlide>
-          <SwiperSlide onClick={() => openModal(slide_image_5)}>
-            <img src={slide_image_5} alt="slide_image_5" />
-            <p style={{ textAlign: "center" }}>Fighting-Samurai</p>
-          </SwiperSlide>
-          <SwiperSlide onClick={() => openModal(slide_image_6)}>
-            <img src={slide_image_6} alt="slide_image_6" />
-            <p style={{ textAlign: "center" }}>PokemonStyle-Game</p>
-          </SwiperSlide>
-          <SwiperSlide onClick={() => openModal(slide_image_7)}>
-            <img src={slide_image_7} alt="slide_image_7" />
-            <p style={{ textAlign: "center" }}>bookiesList-Website</p>
-          </SwiperSlide>
-          <SwiperSlide onClick={() => openModal(slide_image_8)}>
-            <img src={slide_image_8} alt="slide_image_8" />
-            <p style={{ textAlign: "center" }}>LieferMax </p>
-            <p style={{ textAlign: "center", marginTop: "-3.5rem" }}>
-              - Dein LieferService! -
-            </p>
-          </SwiperSlide>
-          <SwiperSlide onClick={() => openModal(slide_image_9)}>
-            <img src={slide_image_9} alt="slide_image_9" />
-            <p style={{ textAlign: "center" }}>Aktien-App mit Electron</p>
-          </SwiperSlide>
-          <SwiperSlide onClick={() => openModal(slide_image_10)}>
-            <img src={slide_image_10} alt="slide_image_10" />
-            <p style={{ textAlign: "center" }}>ACHAT</p>
-          </SwiperSlide>
-          <SwiperSlide onClick={() => openModal(slide_image_11)}>
-            <img src={slide_image_11} alt="slide_image_11" />
-            <p style={{ textAlign: "center" }}>Farbgenerator</p>
-          </SwiperSlide>
-          <SwiperSlide onClick={() => openModal(slide_image_12)}>
-            <img src={slide_image_12} alt="slide_image_12" />
-            <p style={{ textAlign: "center" }}>JobStar</p>
-          </SwiperSlide>
-          <SwiperSlide onClick={() => openModal(slide_image_13)}>
-            <img src={slide_image_13} alt="slide_image_13" />
-            <p style={{ textAlign: "center" }}>Search4GithubUsers</p>
-          </SwiperSlide>
+          {portfolioImages.map((image, index) => (
+            <SwiperSlide key={index} onClick={() => openModal(image.src)}>
+              <img src={image.src} alt={image.alt} />
+              <p style={{ textAlign: "center" }}>{image.caption}</p>
+              {image.subCaption && (
+                <p style={{ textAlign: "center", marginTop: "-3.5rem" }}>
+                  {image.subCaption}
+                </p>
+              )}
+            </SwiperSlide>
+          ))}
 
           <div className="slider-controller">
             <div className="swiper-button-prev slider-arrow">

@@ -1,214 +1,135 @@
-import classes from './Downloads.module.css'
-import PageHeader from '../PageHeader/PageHeader';
+// src/components/Downloads/Downloads.js
 
-import React from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { useEffect } from 'react';
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import classes from "./Downloads.module.css";
+import PageHeader from "../PageHeader/PageHeader";
+import downloadsData from "./DownloadsData"; // Import the downloads data
 
 const Downloads = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
 
-    const { ref, inView } = useInView(
-        {
-            threshold: 0.2,
-        }
-    );
-    const animation = useAnimation();
+  const animation = useAnimation();
 
-    useEffect(() => {
-        const animateInView = async () => {
-            if (inView) {
-                await animation.start({
-                    x: 0,
-                    transition: { type: "spring", duration: 1, bounce: 0.3 }
-                });
-            }
-            if (!inView) {
-                await animation.start({
-                    x: '100vw',
-                });
-            }
-        }
-
-        animateInView(); // Aufruf der Animation
-
-    }, [inView, animation]);
-
-    const containerStyles = {
-        margin: '0 15%',
-        marginTop: '-3%',
-        backgroundColor: 'rgba(135, 206, 235, 0.5)',
-        padding: '2%',
-        borderRadius: '20px',
-        boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.5)',
-        display: 'flex',
-        zIndex: 2000000000000,
-        maxWidth: '100vw',
-        marginLeft: '20vw',
+  useEffect(() => {
+    const animateInView = async () => {
+      if (inView) {
+        await animation.start({
+          x: 0,
+          transition: { type: "spring", duration: 1, bounce: 0.3 },
+        });
+      } else {
+        await animation.start({
+          x: "100vw",
+        });
+      }
     };
 
-    const textContainerStyles = {
-        flex: 1,
-        paddingRight: '20px',
-    };
+    animateInView(); // Call the animation
+  }, [inView, animation]);
 
-    const h2Style = {
-        fontWeight: 'normal',
-        fontSize: '26px',
-        marginBottom: '15px',
-        fontStyle: 'italic bold',
-        fontFamily: '"Playfair Display", serif',
-        color: 'white',
-    };
+  const handleDownload = (event, link) => {
+    event.preventDefault(); // Prevent the default action of the link
 
-    const h3Style = {
-        fontWeight: 'normal',
-        fontSize: '16px',
-        marginBottom: '16px',
-        fontStyle: 'italic bold',
-        fontFamily: '"Playfair Display", serif',
-        color: 'white',
-    };
+    // Create a link to the PDF file
+    const a = document.createElement("a");
+    a.style.display = "none";
+    a.href = link;
+    a.target = "_blank"; // Open in a new tab
+    a.rel = "noopener noreferrer"; // Security best practice for opening in a new tab
 
-    const paragraphStyles = {
-        fontWeight: 'normal',
-        fontSize: '18px',
-        marginBottom: '20px',
-        fontFamily: '"Playfair Display", serif',
-        color: 'white',
-    };
+    // Append the a element to the DOM and simulate the click
+    document.body.appendChild(a);
+    a.click();
 
-    const linkStyles = {
-        color: 'white',
-        textDecoration: 'none', // Keine Unterstreichung
-    };
+    // Remove the a element from the DOM
+    document.body.removeChild(a);
+  };
 
-    const handleDownloadCV = (event) => {
-        event.preventDefault(); // Verhindere die Standardaktion des Links
+  const containerStyles = {
+    margin: "0 15%",
+    marginTop: "-3%",
+    backgroundColor: "rgba(135, 206, 235, 0.5)",
+    padding: "2%",
+    borderRadius: "20px",
+    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.5)",
+    display: "flex",
+    zIndex: 2000000000000,
+    maxWidth: "100vw",
+    marginLeft: "20vw",
+  };
 
-        // Erstelle einen Link zur PDF-Datei (direkter Dateiname)
-        const pdfLink = 'https://drive.google.com/file/d/1kwRnfytrAj3bk05b9fMaW2tVjTfHsPYh/view?usp=drive_link';
+  const textContainerStyles = {
+    flex: 1,
+    paddingRight: "20px",
+  };
 
-        // Erstelle ein unsichtbares a-Element
-        const a = document.createElement('a');
-        a.style.display = 'none';
-        a.href = pdfLink;
-        a.target = '_blank'; // Open in a new tab
-        a.rel = 'noopener noreferrer'; // Security best practice for opening in a new tab
+  const h2Style = {
+    fontWeight: "normal",
+    fontSize: "26px",
+    marginBottom: "15px",
+    fontStyle: "italic bold",
+    fontFamily: '"Playfair Display", serif',
+    color: "white",
+  };
 
-        // Füge das a-Element zum DOM hinzu und simuliere den Klick
-        document.body.appendChild(a);
-        a.click();
+  const h3Style = {
+    fontWeight: "normal",
+    fontSize: "16px",
+    marginBottom: "16px",
+    fontStyle: "italic bold",
+    fontFamily: '"Playfair Display", serif',
+    color: "white",
+  };
 
-        // Entferne das a-Element aus dem DOM
-        document.body.removeChild(a);
-    };
+  const paragraphStyles = {
+    fontWeight: "normal",
+    fontSize: "18px",
+    marginBottom: "20px",
+    fontFamily: '"Playfair Display", serif',
+    color: "white",
+  };
 
-    const handleDownloadSkills = (event) => {
-        event.preventDefault(); // Verhindere die Standardaktion des Links
+  const linkStyles = {
+    color: "white",
+    textDecoration: "none", // No underline
+  };
 
-        // Erstelle einen Link zur PDF-Datei (direkter Dateiname)
-        const pdfLink = 'https://drive.google.com/file/d/1urRS9fvujHhxPBDEK61RCdf37leK_XxG/view?usp=drive_link';
-
-        // Erstelle ein unsichtbares a-Element
-        const a = document.createElement('a');
-        a.style.display = 'none';
-        a.href = pdfLink;
-        a.target = '_blank'; // Open in a new tab
-        a.rel = 'noopener noreferrer'; // Security best practice for opening in a new tab
-
-        // Füge das a-Element zum DOM hinzu und simuliere den Klick
-        document.body.appendChild(a);
-        a.click();
-
-        // Entferne das a-Element aus dem DOM
-        document.body.removeChild(a);
-    };
-
-    const handleDownloadCert = (event) => {
-        event.preventDefault(); // Verhindere die Standardaktion des Links
-
-        // Erstelle einen Link zur PDF-Datei (direkter Dateiname)
-        const pdfLink = 'https://drive.google.com/file/d/1u_SyuTjzGjP2JSackQn0iupN6wUr7a07/view?usp=drive_link';
-
-        // Erstelle ein unsichtbares a-Element
-        const a = document.createElement('a');
-        a.style.display = 'none';
-        a.href = pdfLink;
-        a.target = '_blank'; // Open in a new tab
-        a.rel = 'noopener noreferrer'; // Security best practice for opening in a new tab
-
-        // Füge das a-Element zum DOM hinzu und simuliere den Klick
-        document.body.appendChild(a);
-        a.click();
-
-        // Entferne das a-Element aus dem DOM
-        document.body.removeChild(a);
-    };
-
-    const handleDownloadQuizApp = (event) => {
-        event.preventDefault(); // Verhindere die Standardaktion des Links
-
-        // Erstelle einen Link zur PDF-Datei (direkter Dateiname)
-        const quizAppLink = 'https://drive.google.com/file/d/1K6hYlbgT_Scj-efPbfabPHF0ike8rPm9/view?usp=drive_link';
-
-        // Erstelle ein unsichtbares a-Element
-        const a = document.createElement('a');
-        a.style.display = 'none';
-        a.href = quizAppLink;
-        a.target = '_blank'; // Open in a new tab
-        a.rel = 'noopener noreferrer'; // Security best practice for opening in a new tab
-
-        // Füge das a-Element zum DOM hinzu und simuliere den Klick
-        document.body.appendChild(a);
-        a.click();
-
-        // Entferne das a-Element aus dem DOM
-        document.body.removeChild(a);
-    };
-
-    return (
-        <div className={classes.Downloads} id="downloads">
-            <PageHeader title={'Downloads'} />
-            <div ref={ref} className={classes.DownloadContent}>
-                <motion.div
-                    initial={{ x: "-100vw" }}
-                    animate={animation}
-                >
-
-                    <div id="root">
-                        <div className="welcome-section" style={containerStyles}>
-                            <div style={textContainerStyles}>
-                                <h2 style={h2Style}>Downloads</h2>
-                                <h3 style={h3Style}>(Weiterleitung erfolgt auf GoogleDrive, dort stehen die Dateien zur Verfügung.)</h3>
-                                <br></br>
-                                <p style={paragraphStyles}>
-                                    <a href="Lebenslauf-Download" onClick={handleDownloadCV} style={linkStyles}>
-                                        ↓ Lebenslauf/CV PDF
-                                    </a>
-                                </p>
-                                <p style={paragraphStyles}>
-                                    <a href="QuizApp-Download" onClick={handleDownloadQuizApp} style={linkStyles}>
-                                        ↓ QuizTopia-App offline (Windows)
-                                    </a>
-                                </p>
-                                <p style={paragraphStyles}>
-                                    <a href="Skillnachweis-Download" onClick={handleDownloadSkills} style={linkStyles}>
-                                        ↓ Skillnachweise als PDF
-                                    </a>
-                                </p>
-                                <p style={paragraphStyles}>
-                                    <a href="Zertifikat-Download" onClick={handleDownloadCert} style={linkStyles}>
-                                        ↓ TechStarter-Abschlusszertifikat als PDF
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
+  return (
+    <div className={classes.Downloads} id="downloads">
+      <PageHeader title={"Downloads"} />
+      <div ref={ref} className={classes.DownloadContent}>
+        <motion.div initial={{ x: "-100vw" }} animate={animation}>
+          <div id="root">
+            <div className="welcome-section" style={containerStyles}>
+              <div style={textContainerStyles}>
+                <h2 style={h2Style}>Downloads</h2>
+                <h3 style={h3Style}>
+                  (Weiterleitung erfolgt auf GoogleDrive, dort stehen die
+                  Dateien zur Verfügung.)
+                </h3>
+                <br></br>
+                {downloadsData.map((download) => (
+                  <p style={paragraphStyles} key={download.id}>
+                    <a
+                      href={download.id}
+                      onClick={(e) => handleDownload(e, download.link)}
+                      style={linkStyles}
+                    >
+                      {download.text}
+                    </a>
+                  </p>
+                ))}
+              </div>
             </div>
-        </div>
-    );
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
 };
 
 export default Downloads;
