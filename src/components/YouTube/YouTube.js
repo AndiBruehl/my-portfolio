@@ -1,8 +1,8 @@
 import PageHeader from "../PageHeader/PageHeader";
 import classes from "./YouTube.module.css";
 import QuizTopia from "./../../assets/QuizTopia.png";
-import WeatherNow from "./../../assets/WeaatherNow.png";
-import JavaScriptGames from "./../../assets/JavaScripzGames.png";
+import WeatherNow from "./../../assets/WeatherNow.png";
+import JavaScriptGames from "./../../assets/JavaScriptGames.png";
 import bg2 from "./../../assets/background2.png";
 import background from "./../../assets/background3.png";
 import { motion, useAnimation } from "framer-motion";
