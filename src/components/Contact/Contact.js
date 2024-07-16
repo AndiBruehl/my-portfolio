@@ -18,20 +18,25 @@ const svgStyles = {
 };
 
 const Contacts = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const [isImprintModalOpen, setIsImprintModalOpen] = useState(false);
 
   const openContactForm = (e) => {
     e.preventDefault();
-    setIsModalOpen(true);
+    setIsContactModalOpen(true);
   };
 
   const openImprint = (e) => {
     e.preventDefault();
-    setIsModalOpen(true);
+    setIsImprintModalOpen(true);
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
+  const closeContactModal = () => {
+    setIsContactModalOpen(false);
+  };
+
+  const closeImprintModal = () => {
+    setIsImprintModalOpen(false);
   };
 
   const currentYear = new Date().getFullYear();
@@ -139,7 +144,8 @@ const Contacts = () => {
       >
         Legal Notice
       </a>
-      {isModalOpen && <ImprintModal onClose={closeModal} />}
+      {isContactModalOpen && <ContactModal onClose={closeContactModal} />}
+      {isImprintModalOpen && <ImprintModal onClose={closeImprintModal} />}
     </motion.div>
   );
 };
