@@ -11,6 +11,7 @@ import { GrContact } from "react-icons/gr";
 import credly_white from "../../assets/credly_white.png";
 import ContactModal from "./ContactModal";
 import { motion } from "framer-motion";
+import ImprintModal from "./ImprintModal";
 
 const svgStyles = {
   filter: "invert(1)", // Invert the colors of the SVG
@@ -20,6 +21,11 @@ const Contacts = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openContactForm = (e) => {
+    e.preventDefault();
+    setIsModalOpen(true);
+  };
+
+  const openImprint = (e) => {
     e.preventDefault();
     setIsModalOpen(true);
   };
@@ -125,7 +131,15 @@ const Contacts = () => {
       <p className={classes.FooterText}>
         &copy; {currentYear} A. Brühl - All rights reserved
       </p>
-      {isModalOpen && <ContactModal onClose={closeModal} />}
+
+      <a
+        href="#imprint-form"
+        onClick={openImprint}
+        style={{ textDecoration: "none" }}
+      >
+        Legal Notice
+      </a>
+      {isModalOpen && <ImprintModal onClose={closeModal} />}
     </motion.div>
   );
 };
