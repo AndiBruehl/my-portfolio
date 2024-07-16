@@ -142,7 +142,7 @@ const Contacts = () => {
         onClick={openImprint}
         style={{ textDecoration: "none" }}
       >
-        Legal Notice
+        Impressum/Legal Notice{" "}
       </a>
       {isContactModalOpen && <ContactModal onClose={closeContactModal} />}
       {isImprintModalOpen && <ImprintModal onClose={closeImprintModal} />}
