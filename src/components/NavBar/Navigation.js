@@ -1,10 +1,10 @@
 // Navigation.js
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import NavLinks from "./NavLinks";
-import classes from './NavBar.module.css';
+import classes from "./NavBar.module.css";
 
 const Navigation = () => {
-  const [activeLink, setActiveLink] = useState('Home'); // Initial sollte 'Home' unterstrichen sein
+  const [activeLink, setActiveLink] = useState("Home");
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
@@ -15,6 +15,6 @@ const Navigation = () => {
       <NavLinks activeLink={activeLink} onLinkClick={handleLinkClick} />
     </nav>
   );
-}
+};
 
 export default Navigation;
