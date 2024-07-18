@@ -23,10 +23,10 @@ const Imprint = () => {
 
       <p>
         Andreas Brühl
-        <br />
+        {/* <br />
         Schillerstraße 66
         <br />
-        99096 Erfurt
+        99096 Erfurt */}
       </p>
 
       <h2 className="custom-size">Kontakt/Contact</h2>
