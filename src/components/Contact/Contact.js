@@ -113,7 +113,7 @@ const Contacts = () => {
       <br />
       <div
         style={{
-          marginTop: "-25px",
+          marginTop: "-5px",
           width: "100vw",
           display: "flex",
           alignItems: "center",
