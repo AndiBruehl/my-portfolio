@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.8126a9ef.css",
-    "main.js": "/my-portfolio/static/js/main.59fefe96.js",
+    "main.js": "/my-portfolio/static/js/main.2bdc73c3.js",
     "static/media/me.png": "/my-portfolio/static/media/me.71b99f00e9110fa94aa6.png",
     "static/media/image8.png": "/my-portfolio/static/media/image8.ad92479de29b60bd1ce8.png",
     "static/media/image7.png": "/my-portfolio/static/media/image7.17be0dc780ee217b4c5c.png",
@@ -32,6 +32,7 @@
     "static/media/image16.png": "/my-portfolio/static/media/image16.ef1a0aca32ca8c1035a0.png",
     "static/media/image11.png": "/my-portfolio/static/media/image11.8ddfc66cbc11d5ee0189.png",
     "static/media/image27.png": "/my-portfolio/static/media/image27.90b6379b1cdcf3af16de.png",
+    "static/media/image28.png": "/my-portfolio/static/media/image28.631187ad4b2f915a6f29.png",
     "static/media/image9.png": "/my-portfolio/static/media/image9.6b9f6164bc29dcca99fd.png",
     "static/media/binaryWorld.png": "/my-portfolio/static/media/binaryWorld.81143922ca1901588da0.png",
     "static/media/image26.png": "/my-portfolio/static/media/image26.fd1f8b4501aa9ef1c795.png",
@@ -41,10 +42,10 @@
     "static/media/code.svg": "/my-portfolio/static/media/code.bcc3e89f293f0534789c02c60b8861f7.svg",
     "index.html": "/my-portfolio/index.html",
     "main.8126a9ef.css.map": "/my-portfolio/static/css/main.8126a9ef.css.map",
-    "main.59fefe96.js.map": "/my-portfolio/static/js/main.59fefe96.js.map"
+    "main.2bdc73c3.js.map": "/my-portfolio/static/js/main.2bdc73c3.js.map"
   },
   "entrypoints": [
     "static/css/main.8126a9ef.css",
-    "static/js/main.59fefe96.js"
+    "static/js/main.2bdc73c3.js"
   ]
 }
