@@ -25,6 +25,7 @@ import slide_image_24 from "./assets/images/image24.png";
 import slide_image_25 from "./assets/images/image25.png";
 import slide_image_26 from "./assets/images/image26.png";
 import slide_image_27 from "./assets/images/image27.png";
+import slide_image_28 from "./assets/images/image28.png";
 
 const images = [
   slide_image_1,
@@ -41,6 +42,7 @@ const images = [
   slide_image_15,
   slide_image_16,
   slide_image_27,
+  slide_image_28,
   slide_image_21,
   slide_image_17,
   slide_image_20,

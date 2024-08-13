@@ -13,6 +13,8 @@ import slide_image_10 from "./assets/images/image10.png";
 import slide_image_11 from "./assets/images/image11.png";
 import slide_image_12 from "./assets/images/image12.png";
 import slide_image_13 from "./assets/images/image13.png";
+import slide_image_14 from "./assets/images/image14.png";
+import slide_image_15 from "./assets/images/image15.png";
 
 const portfolioImages = [
   {
@@ -41,6 +43,8 @@ const portfolioImages = [
   { src: slide_image_11, alt: "slide_image_11", caption: "Farbgenerator" },
   { src: slide_image_12, alt: "slide_image_12", caption: "JobStar" },
   { src: slide_image_13, alt: "slide_image_13", caption: "Search4GithubUsers" },
+  { src: slide_image_14, alt: "slide_image_14", caption: "GuessMyNumber" },
+  { src: slide_image_15, alt: "slide_image_15", caption: "MemSnap" },
 ];
 
 export default portfolioImages;
