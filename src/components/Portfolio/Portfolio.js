@@ -60,7 +60,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="container" style={{ backgroundColor: "black" }}>
+    <div className="container" style={{ backgroundColor: `#000825` }}>
       <div id="portfolio">
         <PageHeader title={"Portfolio"} />
         <Header>Beispiele meiner Arbeiten:</Header>

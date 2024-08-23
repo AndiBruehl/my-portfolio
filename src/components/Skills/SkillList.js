@@ -1,5 +1,4 @@
 import React from "react";
-import classes from "./SkillList.module.css";
 
 const listTitleStyle = {
   fontWeight: 900,
