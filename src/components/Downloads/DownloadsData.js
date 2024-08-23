@@ -38,7 +38,7 @@ const downloadsData = [
   {
     id: "Invoicer-Download",
     handler: "invoicerDownloadCert",
-    text: "↓ Invoicer - Eine C# x64/x86 Windows-Anwendung, um Rechnungen komfortabel zu erstellen.",
+    text: "↓ Invoicer - Rechnungen komfortabel erstellen.",
     link: "https://drive.google.com/file/d/1C3O6o8NT7dHyT5_cpj30H0xgWN_zoaBk/view?usp=drive_link",
   },
 ];
