@@ -15,6 +15,7 @@ import slide_image_12 from "./assets/images/image12.png";
 import slide_image_13 from "./assets/images/image13.png";
 import slide_image_14 from "./assets/images/image14.png";
 import slide_image_15 from "./assets/images/image15.png";
+import slide_image_16 from "./assets/images/image16.png";
 
 const portfolioImages = [
   {
@@ -45,6 +46,12 @@ const portfolioImages = [
   { src: slide_image_13, alt: "slide_image_13", caption: "Search4GithubUsers" },
   { src: slide_image_14, alt: "slide_image_14", caption: "GuessMyNumber" },
   { src: slide_image_15, alt: "slide_image_15", caption: "MemSnap" },
+  {
+    src: slide_image_16,
+    alt: "slide_image_16",
+    caption: "Windows-Rechnungs-App",
+    subCaption: " - geschrieben in C# -",
+  },
 ];
 
 export default portfolioImages;

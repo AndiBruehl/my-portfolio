@@ -8,7 +8,7 @@ const downloadsData = [
   {
     id: "QuizApp-Download",
     handler: "handleDownloadQuizApp",
-    text: "↓ QuizTopia-App offline (Windows)",
+    text: "↓ QuizTopia-App offline\n(Windows)",
     link: "https://drive.google.com/file/d/1K6hYlbgT_Scj-efPbfabPHF0ike8rPm9/view?usp=drive_link",
   },
   {
@@ -34,6 +34,12 @@ const downloadsData = [
     handler: "memSnapDownloadCert",
     text: "↓ MemSnap.apk - Save your favorite locations on your device!",
     link: "https://drive.google.com/file/d/1utOkPZFcylJ6PV0vZ7ib2IMeFEftJO40/view?usp=drive_link",
+  },
+  {
+    id: "Invoicer-Download",
+    handler: "invoicerDownloadCert",
+    text: "↓ Invoicer - Rechnungen komfortabel erstellen. (C#, WINx86/x64)",
+    link: "https://drive.google.com/file/d/1C3O6o8NT7dHyT5_cpj30H0xgWN_zoaBk/view?usp=drive_link",
   },
 ];
 
